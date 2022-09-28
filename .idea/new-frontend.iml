@@ -17,5 +17,7 @@
     <orderEntry type="library" name="jquery-3.5.1.slim" level="application" />
     <orderEntry type="library" name="splitting" level="application" />
     <orderEntry type="library" name="scroll-out" level="application" />
+    <orderEntry type="library" name="twitter-bootstrap" level="application" />
+    <orderEntry type="library" name="twbs-pagination" level="application" />
   </component>
 </module>
