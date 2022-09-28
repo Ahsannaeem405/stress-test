@@ -49,7 +49,8 @@ ul{
     padding: 30px;
 }
 
-.TestCardSec{
+.TestCardSec,
+.StressTestSec{
     padding: 70px 0;
 }
 .TestCardSec .InnerBox .col {
@@ -122,12 +123,51 @@ ul{
     color: #f7f7f7;
     text-shadow: 3px 4px 7px #474f59;
 }
-
 @keyframes marquee {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
 }
 
+.StressTestSec .table {
+    background: #f77b55;
+    border-radius: 20px;
+}
+.StressTestSec .table thead{
+}
+.StressTestSec .table thead tr th{
+    padding: 35px;
+}
+.StressTestSec .table tr th,
+.StressTestSec .table tr td{
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins-Regular';
+}
+.StressTestSec .table tr td{
+    color: #474f59;
+}
+.StressTestSec .table tr:nth-child(even){
+    background-color: #f7f7f7;
+}
+.StressTestSec .table tbody{
+    background-color: #ccc;
+}
+.form-check-input{
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    cursor: pointer;
+}
+.form-check-input:checked{
+    background-color: #f77b55 !important;
+    border-color: #f77b55 !important;
+}
+.form-check-input:checked[type=radio]{
+    background-image: url("../images/tick-white.png") !important;
+    background-size: 70%;
+}
+.form-check-input:focus{
+    box-shadow: none !important;
+}
 @media only screen and (max-width: 768px) and (min-width: 300px){
 
 }
