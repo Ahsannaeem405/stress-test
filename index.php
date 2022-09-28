@@ -11,7 +11,7 @@
                 <img src="images/brain.png" />
                 <h3>Stress Test</h3>
                 <div class="HoverBtn d-none">
-                    <button class="btnNext">Next</button>
+                    <a href="stress-test.php" class="btnNext">Next</a>
                 </div>
             </div>
             <div class="col">
