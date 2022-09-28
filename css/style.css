@@ -50,7 +50,8 @@ ul{
 }
 
 .TestCardSec,
-.StressTestSec{
+.StressTestSec,
+.StressDetailSec{
     padding: 70px 0;
 }
 .TestCardSec .InnerBox .col {
