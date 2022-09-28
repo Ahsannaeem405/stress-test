@@ -88,10 +88,10 @@ ul{
     left: 0;
     right: 0;
     border-radius: 0px 0 33px 33px;
+    padding: 10px;
 }
 .TestCardSec .InnerBox .col:hover .HoverBtn .btnNext {
     width: 100%;
-    padding: 10px;
     background: transparent;
     border: 0;
     color: #f7f7f7;
@@ -135,7 +135,7 @@ ul{
 .StressTestSec .table thead{
 }
 .StressTestSec .table thead tr th{
-    padding: 35px;
+    padding: 35px 12px;
 }
 .StressTestSec .table tr th,
 .StressTestSec .table tr td{
@@ -145,6 +145,7 @@ ul{
 }
 .StressTestSec .table tr td{
     color: #474f59;
+    font-size: 15px;
 }
 .StressTestSec .table tr:nth-child(even){
     background-color: #f7f7f7;
