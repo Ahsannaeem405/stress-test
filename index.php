@@ -18,7 +18,7 @@
                 <img src="images/test.png" />
                 <h3>Live Test</h3>
                 <div class="HoverBtn d-none">
-                    <a href="#" class="text-decoration-none btnNext">Next</a>
+                    <a href="live-test.php" class="text-decoration-none btnNext">Next</a>
                 </div>
             </div>
         </div>
