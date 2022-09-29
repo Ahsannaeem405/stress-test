@@ -222,7 +222,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><button class="btnNext">Submit</button></td>
+                            <td><a href="stress-total.php" class="btnNext text-decoration-none fw-bold">Submit</a></td>
                         </tr>
                     </tbody>
                 </table>
