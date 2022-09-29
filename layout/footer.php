@@ -27,11 +27,11 @@
 
             // Add data
             chart.data = [{
-                "Test": "Lithuania", "value": 501},
-                {"Test": "Czechia", "value": 301},
-                {"Test": "Ireland", "value": 201},
-                {"Test": "Germany", "value": 165},
-                {"Test": "Australia", "value": 139},
+                "Test": "Konstant", "value": 501},
+                {"Test": "Hyppigt", "value": 301},
+                {"Test": "Nogle gange", "value": 201},
+                {"Test": "Sjældent", "value": 165},
+                {"Test": "Aldrig", "value": 139},
                 {"Test": "Austria", "value": 128}];
 
             // Add and configure Series
