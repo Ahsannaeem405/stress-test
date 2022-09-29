@@ -21,12 +21,5 @@
             </div>
         </div>
     </div>
-<style>
-
-</style>
-
-<script>
-
-</script>
 
 <?php @include 'layout/footer.php'?>
