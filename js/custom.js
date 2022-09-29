@@ -69,3 +69,4 @@ slider8.oninput = function () {
 //         }]
 //     }
 // });
+

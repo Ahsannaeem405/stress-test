@@ -1,5 +1,5 @@
 <?php @include 'layout/header.php'?>
-    <div class="StressTestSec">
+    <div class="StressTestSec StressTestPage">
         <div class="container">
             <div class="row">
                 <h2 class="text-center">Arbejdsstress test</h2>

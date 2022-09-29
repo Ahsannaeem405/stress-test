@@ -24,5 +24,8 @@
     <orderEntry type="library" name="highcharts" level="application" />
     <orderEntry type="library" name="exporting" level="application" />
     <orderEntry type="library" name="highcharts-3d" level="application" />
+    <orderEntry type="library" name="jquery.easy-pie-chart" level="application" />
+    <orderEntry type="library" name="core" level="application" />
+    <orderEntry type="library" name="charts" level="application" />
   </component>
 </module>
