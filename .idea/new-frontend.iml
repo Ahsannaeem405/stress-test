@@ -20,5 +20,9 @@
     <orderEntry type="library" name="twitter-bootstrap" level="application" />
     <orderEntry type="library" name="twbs-pagination" level="application" />
     <orderEntry type="library" name="simplePagination.js" level="application" />
+    <orderEntry type="library" name="Chart.js" level="application" />
+    <orderEntry type="library" name="highcharts" level="application" />
+    <orderEntry type="library" name="exporting" level="application" />
+    <orderEntry type="library" name="highcharts-3d" level="application" />
   </component>
 </module>

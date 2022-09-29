@@ -216,42 +216,20 @@
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault2"></td>
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault1"></td>
                         </tr>
-                        <tr class="list-item">
+                        <tr class="list-item position-relative bg-white">
                             <td></td>
+                            <td class="SubmitBtn"><a href="stress-total.php" class="btnNext text-decoration-none fw-bold">Submit</a></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><a href="stress-total.php" class="btnNext text-decoration-none fw-bold">Submit</a></td>
                         </tr>
                     </tbody>
                 </table>
-                <div id="pagination-container"></div>
+                <nav class="PaginationBtm"><ul class="pagination" id="pagination-container"></ul></nav>
+<!--                <div id="pagination-container"></div>-->
+
                 <div class="TotalinDigits">
 <!--                    <button class="btn-primary float-right">Submit</button>-->
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js"></script>
-    <script>
-        var items = $(".list-wrapper .list-item");
-        var numItems = items.length;
-        var perPage = 4;
-
-        items.slice(perPage).hide();
-
-        $('#pagination-container').pagination({
-            items: numItems,
-            itemsOnPage: perPage,
-            prevText: "Previous",
-            nextText: "Next",
-            onPageClick: function (pageNumber) {
-                var showFrom = perPage * (pageNumber - 1);
-                var showTo = showFrom + perPage;
-                items.hide().slice(showFrom, showTo).show();
-            }
-        });
-    </script>
 <?php @include 'layout/footer.php'?>

@@ -161,10 +161,17 @@ ul{
     transition: 0.5s ease;
 }
 .StressTestSec .table {
-    background: #f77b55;
     border-radius: 20px;
+    margin: 0;
 }
 .StressTestSec .table thead{
+    background: #f77b55;
+}
+thead th:first-child {
+    border-radius: 20px 0 0 0;
+}
+thead th:last-child {
+    border-radius: 0 20px 0px 0;
 }
 .StressTestSec .table thead tr th{
     padding: 35px 12px;
@@ -185,6 +192,9 @@ ul{
 .StressTestSec .table tbody{
     background-color: #ccc;
 }
+.StressTestSec .table tbody tr.position-relative td.SubmitBtn{
+    padding: 50px;
+}
 .form-check-input{
     width: 1.5rem !important;
     height: 1.5rem !important;
@@ -202,8 +212,15 @@ ul{
     box-shadow: none !important;
 }
 
-.simple-pagination{
-    margin-top: 30px !important;
+.PaginationBtm{
+    background: #f77b55 !important;
+    position: relative;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+}
+.simple-pagination {
+    width: 20% !important;
+    margin: 20px auto !important;
 }
 .simple-pagination ul {
     margin: 0 0 20px;
@@ -211,11 +228,16 @@ ul{
     list-style: none;
     text-align: center;
 }
-
 .simple-pagination li {
     display: inline-block;
     margin-right: 5px;
+    display: none;
 }
+.simple-pagination li:first-child,
+.simple-pagination li:last-child{
+    display: block !important;
+}
+
 .simple-pagination li a,
 .simple-pagination li span {
     color: #666;
@@ -230,6 +252,8 @@ ul{
     color: #474f59;
     background-color: #cccccc;
     border-color: #ccc;
+    position: relative;
+    top: 5px;
 }
 
 .stressTotal .text-start p.mt-3 {
@@ -262,6 +286,10 @@ input[type="range"]::-webkit-slider-runnable-track {
 input[type="range"]::-moz-range-track {
     background: #053a5f;
     height: 0.5rem;
+}
+.highcharts-exporting-group,
+.highcharts-credits{
+    display: none !important;
 }
 @media only screen and (max-width: 768px) and (min-width: 300px){
 
