@@ -19,5 +19,6 @@
     <orderEntry type="library" name="scroll-out" level="application" />
     <orderEntry type="library" name="twitter-bootstrap" level="application" />
     <orderEntry type="library" name="twbs-pagination" level="application" />
+    <orderEntry type="library" name="simplePagination.js" level="application" />
   </component>
 </module>

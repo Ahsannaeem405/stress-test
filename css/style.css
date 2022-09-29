@@ -80,6 +80,8 @@ ul{
 }
 .TestCardSec .InnerBox .col:hover {
     box-shadow: 2px 3px 11px #d7a625;
+    transform: translateX(10px);
+    transition: 0.4s ease-in;
 }
 .TestCardSec .InnerBox .col:hover .HoverBtn {
     display: block !important;
@@ -130,6 +132,34 @@ ul{
     to { transform: translateX(-50%); }
 }
 
+/**/
+
+.Innerdetail{
+    background: rgb(215, 166, 37);
+    color: #f7f7f7;
+    text-align: center;
+    width: 70% !important;
+    margin: 0 auto;
+    max-width: 100%;
+    line-height: 30px;
+    padding: 30px;
+    box-shadow: 2px 3px 11px #d7a625;
+    border-radius: 10px;
+}
+.Innerdetail .btnNext,
+.StressTestSec .table tr .btnNext{
+    background: #474f59;
+    padding: 12px 5rem;
+    border-radius: 10px;
+    color: #f7f7f7;
+    font-size: 22px;
+    border: 1px solid #474f59;
+}
+.btnNext:hover{
+    background: #f77b55;
+    color: #474f59;
+    transition: 0.5s ease;
+}
 .StressTestSec .table {
     background: #f77b55;
     border-radius: 20px;
@@ -170,6 +200,36 @@ ul{
 }
 .form-check-input:focus{
     box-shadow: none !important;
+}
+
+.simple-pagination{
+    margin-top: 30px !important;
+}
+.simple-pagination ul {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.simple-pagination li {
+    display: inline-block;
+    margin-right: 5px;
+}
+.simple-pagination li a,
+.simple-pagination li span {
+    color: #666;
+    padding: 5px 12px;
+    text-decoration: none;
+    border: 1px solid #cccccc;
+    background-color: #FFF;
+    box-shadow: 0px 0px 8px 0px #cccccc;
+    border-radius: 8px;
+}
+.simple-pagination .current {
+    color: #474f59;
+    background-color: #cccccc;
+    border-color: #ccc;
 }
 @media only screen and (max-width: 768px) and (min-width: 300px){
 
