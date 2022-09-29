@@ -22,7 +22,7 @@
         <div class="header">
             <div class="container p-0 ">
                 <nav class="navbar navbar-expand-lg navbar-light p-0 text-center d-block">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="/">
                         <img src="./images/arb-logo.png" alt="Logo" height="100" />
                     </a>
                 </nav>
