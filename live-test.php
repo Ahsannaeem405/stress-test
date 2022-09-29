@@ -100,6 +100,9 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr class="list-item position-relative bg-white">
+                            <td class="SubmitBtn" colspan="3"><a href="live-total.php" class="btnNext text-decoration-none fw-bold">Submit</a></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
