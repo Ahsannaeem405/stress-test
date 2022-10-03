@@ -17,7 +17,7 @@
                 }
             },
             title: {
-                text: 'Livshjulet Tset'
+                text: 'Livshjulet'
             },
             // subtitle: {
             //     text: 'As per statistics data 2016'
