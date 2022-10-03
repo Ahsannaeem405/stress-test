@@ -10,7 +10,7 @@
                     </div>
                 </div> -->
 
-                <div class="widget text-center">
+                <div class="widget text-center mb-5">
                     <h2 class="header1">Arbejdsstress Total</h2>
                     <div id="chart" class="chart-container"></div>
                 </div>
@@ -28,14 +28,6 @@
     </div>
 
     <style>
-.chart-container{
-    padding:25px;
-}
-
-.shadow {
-    -webkit-filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.5) );
-    filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.5) );
-}
 
     </style>
 <?php @include 'layout/footer.php'?>

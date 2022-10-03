@@ -232,11 +232,6 @@
                     </tbody>
                 </table>
                 <nav class="PaginationBtm"><ul class="pagination" id="pagination-container"></ul></nav>
-<!--                <div id="pagination-container"></div>-->
-
-                <div class="TotalinDigits">
-<!--                    <button class="btn-primary float-right">Submit</button>-->
-                </div>
             </div>
         </div>
     </div>

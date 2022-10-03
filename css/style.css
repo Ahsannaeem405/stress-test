@@ -156,6 +156,9 @@ ul{
     font-size: 22px;
     border: 1px solid #474f59;
 }
+.StressTestSec .table tr .btnNext{
+    padding: 12px 1rem !important;
+}
 .btnNext:hover{
     background: #f77b55;
     color: #474f59;
@@ -200,7 +203,7 @@ thead th:last-child {
     background-color: #ccc;
 }
 .StressTestSec .table tbody tr.position-relative td.SubmitBtn{
-    padding: 50px;
+    padding: 50px 0;
 }
 .form-check-input{
     width: 1.5rem !important;
