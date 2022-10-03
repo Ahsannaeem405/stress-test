@@ -2,7 +2,7 @@
     <div class="StressTestSec StressTestPage">
         <div class="container">
             <div class="row">
-                <h2 class="text-center">Arbejdsstress test</h2>
+                <h2 class="text-center">Arbejdsstress Test</h2>
                 <p class="text-center mb-5 mt-3">Har du i løbet af den sidste måned flere gange oplevet at have:</p>
                 <table cellspacing="0" cellpadding="0" class="table list-wrapper">
                     <thead>
