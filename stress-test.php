@@ -216,14 +216,6 @@
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault2"></td>
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault1"></td>
                         </tr>
-                        <tr class="list-item">
-                            <td>Ændret dine spisevaner og spist mere usundt?</td>
-                            <td><input class="form-check-input" type="radio" name="flexRadioDefault25" id="flexRadioDefault1" ></td>
-                            <td><input class="form-check-input" type="radio" name="flexRadioDefault25" id="flexRadioDefault2"></td>
-                            <td><input class="form-check-input" type="radio" name="flexRadioDefault25" id="flexRadioDefault1"></td>
-                            <td><input class="form-check-input" type="radio" name="flexRadioDefault25" id="flexRadioDefault2"></td>
-                            <td><input class="form-check-input" type="radio" name="flexRadioDefault25" id="flexRadioDefault1"></td>
-                        </tr>
                         <tr class="list-item position-relative bg-white">
                             <td></td>
                             <td class="SubmitBtn"><a href="stress-total.php" class="btnNext text-decoration-none fw-bold">Submit</a></td>
