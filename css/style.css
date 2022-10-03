@@ -178,7 +178,8 @@ thead th:last-child {
     border-radius: 0 20px 0px 0;
 }
 .StressTestSec .table thead tr th{
-    padding: 35px 12px;
+    padding: 35px 5px;
+    width: 0;
 }
 .StressTestSec .table tr th{
     text-align: center;
@@ -204,6 +205,7 @@ thead th:last-child {
 }
 .StressTestSec .table tbody tr.position-relative td.SubmitBtn{
     padding: 50px 0;
+    text-align: right;
 }
 .form-check-input{
     width: 1.5rem !important;

@@ -218,8 +218,11 @@
                         </tr>
                         <tr class="list-item position-relative bg-white">
                             <td></td>
-                            <td class="SubmitBtn"><a href="stress-total.php" class="btnNext text-decoration-none fw-bold">Submit</a></td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="SubmitBtn"><a href="stress-total.php" class="btnNext text-decoration-none fw-bold">Submit</a></td>
                         </tr>
                     </tbody>
                 </table>
