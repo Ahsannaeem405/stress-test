@@ -17,7 +17,7 @@
                 }
             },
             title: {
-                text: 'Livshjulet'
+                text: '<h1>Livshjulet</h1>'
             },
             // subtitle: {
             //     text: 'As per statistics data 2016'
