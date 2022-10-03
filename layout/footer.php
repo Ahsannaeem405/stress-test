@@ -154,7 +154,7 @@
         <script>
             var items = $(".list-wrapper .list-item");
             var numItems = items.length;
-            var perPage = 4;
+            var perPage = 5;
 
             items.slice(perPage).hide();
 
