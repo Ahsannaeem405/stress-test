@@ -49,21 +49,21 @@
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1"></td>
                         </tr>
                         <tr class="list-item">
-                            <td>Oplevet, at du har flere bekymringer og hele tiden tænker på problemer,</td>
+                            <td>Oplevet, at du har flere bekymringer og hele tiden tænker på problemer, selvom du har fri og skal slappe af?</td>
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1" ></td>
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2"></td>
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1"></td>
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2"></td>
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1"></td>
                         </tr>
-                        <tr class="list-item">
-                            <td>selvom du har fri og skal slappe af?</td>
+                        <!-- <tr class="list-item">
+                            <td></td>
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault1" ></td>
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault2"></td>
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault1"></td>
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault2"></td>
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault1"></td>
-                        </tr>
+                        </tr> -->
                         <tr class="list-item">
                             <td>Haft besvær med at koncentrere dig?</td>
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault1" ></td>
