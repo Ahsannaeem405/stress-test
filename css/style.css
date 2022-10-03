@@ -147,14 +147,16 @@ ul{
     box-shadow: 2px 3px 11px #d7a625;
     border-radius: 10px;
 }
-.Innerdetail .btnNext,
-.StressTestSec .table tr .btnNext{
-    background: #474f59;
+.Innerdetail .btnNext, .StressTestSec .table tr .btnNext {
+    background: #f7f7f7;
     padding: 12px 5rem;
     border-radius: 10px;
-    color: #f7f7f7;
-    font-size: 22px;
-    border: 1px solid #474f59;
+    color: #474f59;
+    font-size: 20px;
+    border: 1px solid #dee2e6;
+}
+.StressTestSec .table tr .btnNext:hover{
+    background-color: #ccc;
 }
 .StressTestSec .table tr .btnNext{
     padding: 12px 1rem !important;
