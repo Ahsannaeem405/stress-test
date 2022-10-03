@@ -177,11 +177,17 @@ thead th:last-child {
 .StressTestSec .table thead tr th{
     padding: 35px 12px;
 }
+.StressTestSec .table tr th{
+    text-align: center;
+}
 .StressTestSec .table tr th,
 .StressTestSec .table tr td{
     padding: 20px;
     text-align: center;
     font-family: 'Poppins-Regular';
+}
+.StressTestSec .table tr td:first-child{
+    text-align: justify;
 }
 .StressTestSec .table tr td{
     color: #474f59;
@@ -268,6 +274,28 @@ thead th:last-child {
     width: 55%;
     max-width: 100%;
 }
+/* Stress chart color */
+#chartdiv #id-120{
+    fill: #00ffff !important;
+    stroke: #00ffff;
+}
+#chartdiv #id-149{
+    fill: #37ff37 !important;
+    stroke: #37ff37;
+}
+#chartdiv #id-177{
+    fill: #ffff00 !important;
+    stroke: #ffff00;
+}
+#chartdiv #id-205{
+    fill: #ff0000 !important;
+    stroke: #ff0000;
+}
+#chartdiv #id-233{
+    fill: #000 !important;
+    stroke: #000;
+}
+
 #chartdiv {
     width: 100%;
     height: 400px;

@@ -2,12 +2,17 @@
     <div class="StressDetailSec stressTotal">
         <div class="container">
             <div class="StressTotalSec">
-                <div class="container">
+                <!-- <div class="container">
                     <div>
                         <h2 class="text-center mb-4">Total: 110</h2>
-<!--                        <canvas id="myChart"></canvas>-->
+<!--                        <canvas id="myChart"></canvas>
                         <div id="chartdiv"></div>
                     </div>
+                </div> -->
+
+                <div class="widget text-center">
+                    <h2 class="header1">Arbejdsstress Total</h2>
+                    <div id="chart" class="chart-container"></div>
                 </div>
             </div>
             <div class="row">
@@ -22,4 +27,15 @@
         </div>
     </div>
 
+    <style>
+.chart-container{
+    padding:25px;
+}
+
+.shadow {
+    -webkit-filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.5) );
+    filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.5) );
+}
+
+    </style>
 <?php @include 'layout/footer.php'?>

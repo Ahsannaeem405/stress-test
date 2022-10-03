@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="Innerdetail">
-                    <h2>Lorem Ipsum</h2>
-                    <p class="mb-5 mt-4">Et livshjul eller et Livs-balance-hjul er et hjul, som består af 8 dele eller områder af dit liv. En del/område, der handler om din 1) Personlige udvikling, 2) din Kærlighed/dit parforhold, 3) din Familie/dine venner, 4) Børn, 5) dit Arbejdsliv, 6) dit Helbred 7) din Fritid, og 8) din Økonomi/velstand. Med livshjulet kan vi måle, hvordan balancen mellem de forskellige dele/områder af dit liv er, og i særdeleshed hvordan balancen er mellem dit arbejdsliv og dit privatliv. Om hvad der fylder meget og hvad der fylder lidt og hvordan det påvirker dit arbejdsliv og dit privatliv.</p>
+                    <h2>Livshjuls Test</h2>
+                    <p class="mb-5 mt-4">Når vi tester din livs-balance, så beder vi dig om at vurdere, hvor tilfreds du er med 8 særlige relationer mellem dig og så det miljø, du er i, eller hvordan du forholder dig til 8 forhold i din omgivelser. Du tilkendegiver din vurdering af hvert et forhold ved at svare/sætte kryds på en skala fra 0 til 10, hvor 10 svarer til, at du er Meget tilfreds og 0, at du er Meget Utilfreds. Resultaterne af dine vurderinger vises til sidst i et Livshjul, som viser din nuværende livsbalance</p>
                     <a href="live-test.php" class="text-decoration-none btnNext fw-bold">Next</a>
                 </div>
             </div>

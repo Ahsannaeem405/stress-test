@@ -17,7 +17,7 @@
                 }
             },
             title: {
-                text: 'Live Tset Total'
+                text: 'Livshjulet Tset'
             },
             // subtitle: {
             //     text: 'As per statistics data 2016'
