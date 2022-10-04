@@ -6,11 +6,11 @@
                 <p class="text-center mb-5 mt-3">Hvor tilfreds er du med:</p>
                 <table cellspacing="0" cellpadding="0" class="table">
                     <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Date</th>
-                        <th>Action</th>
-                    </tr>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
