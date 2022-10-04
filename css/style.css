@@ -46,7 +46,7 @@ ul{
     background-color: #f2f2f2;
 }
 .navbar-collapse ul li{
-    padding: 30px;
+    padding: 15px;
 }
 nav .logo{
     width: calc(100% - 44%);
