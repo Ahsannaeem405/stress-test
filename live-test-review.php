@@ -18,7 +18,7 @@
                                 <div class="range-slider">
                                     <div class="range-slider__slider">
                                         <p class="range-slider__value m-0 fw-bold">0</p>
-                                        <input type="range" min="0" max="9" value="0" class="slider w-100" id="rangeSlider"/>
+                                        <input type="range" min="0" max="10" value="0" class="slider w-100" id="rangeSlider"/>
                                     </div>
                                 </div>
                             </td>
@@ -29,7 +29,7 @@
                                 <div class="range-slider">
                                     <div class="range-slider__slider">
                                         <p class="range-slider__value2 m-0 fw-bold">0</p>
-                                        <input type="range" min="0" max="9" value="0" class="slider w-100" id="rangeSlider2"/>
+                                        <input type="range" min="0" max="10" value="0" class="slider w-100" id="rangeSlider2"/>
                                     </div>
                                 </div>
                             </td>
@@ -40,7 +40,7 @@
                                 <div class="range-slider">
                                     <div class="range-slider__slider">
                                         <p class="range-slider__value3 m-0 fw-bold">0</p>
-                                        <input type="range" min="0" max="9" value="0" class="slider w-100" id="rangeSlider3"/>
+                                        <input type="range" min="0" max="10" value="0" class="slider w-100" id="rangeSlider3"/>
                                     </div>
                                 </div>
                             </td>
@@ -51,7 +51,7 @@
                                 <div class="range-slider">
                                     <div class="range-slider__slider">
                                         <p class="range-slider__value4 m-0 fw-bold">0</p>
-                                        <input type="range" min="0" max="9" value="0" class="slider w-100" id="rangeSlider4"/>
+                                        <input type="range" min="0" max="10" value="0" class="slider w-100" id="rangeSlider4"/>
                                     </div>
                                 </div>
                             </td>
@@ -62,7 +62,7 @@
                                 <div class="range-slider">
                                     <div class="range-slider__slider">
                                         <p class="range-slider__value5 m-0 fw-bold">0</p>
-                                        <input type="range" min="0" max="9" value="0" class="slider w-100" id="rangeSlider5"/>
+                                        <input type="range" min="0" max="10" value="0" class="slider w-100" id="rangeSlider5"/>
                                     </div>
                                 </div>
                             </td>
@@ -73,7 +73,7 @@
                                 <div class="range-slider">
                                     <div class="range-slider__slider">
                                         <p class="range-slider__value6 m-0 fw-bold">0</p>
-                                        <input type="range" min="0" max="9" value="0" class="slider w-100" id="rangeSlider6"/>
+                                        <input type="range" min="0" max="10" value="0" class="slider w-100" id="rangeSlider6"/>
                                     </div>
                                 </div>
                             </td>
@@ -84,7 +84,7 @@
                                 <div class="range-slider">
                                     <div class="range-slider__slider">
                                         <p class="range-slider__value7 m-0 fw-bold">0</p>
-                                        <input type="range" min="0" max="9" value="0" class="slider w-100" id="rangeSlider7"/>
+                                        <input type="range" min="0" max="10" value="0" class="slider w-100" id="rangeSlider7"/>
                                     </div>
                                 </div>
                             </td>
@@ -95,7 +95,7 @@
                                 <div class="range-slider">
                                     <div class="range-slider__slider">
                                         <p class="range-slider__value8 m-0 fw-bold">0</p>
-                                        <input type="range" min="0" max="9" value="0" class="slider w-100" id="rangeSlider8"/>
+                                        <input type="range" min="0" max="10" value="0" class="slider w-100" id="rangeSlider8"/>
                                     </div>
                                 </div>
                             </td>

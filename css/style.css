@@ -48,6 +48,11 @@ ul{
 .navbar-collapse ul li{
     padding: 30px;
 }
+nav .logo{
+    width: calc(100% - 44%);
+    float: right !important;
+    text-align: right;
+}
 
 .TestCardSec,
 .StressTestSec,
@@ -337,6 +342,33 @@ input[type="range"]::-moz-range-track {
     font-size: 32px !important;
     font-weight: bold;
 }
+
+/* Login Page */
+.LoginSec{
+
+}
+.LoginSec form {
+    margin: 70px auto;
+    width: 50%;
+    background-color: rgb(215, 166, 37);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 11px #d7a625;
+    transition: 0.4s ease-in;
+}
+.LoginSec form .form-control {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.LoginSec form .button{
+    margin-top: 70px;
+}
+.LoginSec form .button a{
+    background-color: #f77b55;
+    padding: 15px 5em;
+    border-radius: 10px;
+}
+
 @media only screen and (max-width: 768px) and (min-width: 300px){
     .TestCardSec, .StressTestSec, .StressDetailSec, .Live_testDetailSec, .LiveTotalSec {
         padding: 50px;

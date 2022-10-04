@@ -24,10 +24,23 @@
     <div class="InnerMain">
         <div class="header">
             <div class="container p-0 ">
-                <nav class="navbar navbar-expand-lg navbar-light p-0 text-center d-block">
-                    <a class="navbar-brand" href="/">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <a class="navbar-brand logo" href="/">
                         <img src="./images/arb-logo.png" alt="Logo" height="100" />
                     </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="register.php">Register</a>
+                            </li>
+                            <li class="nav-item AdminIcon">
+                                <a class="nav-link loginBtn rounded" href="login.php">Login</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
