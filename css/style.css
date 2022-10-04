@@ -373,6 +373,9 @@ input[type="range"]::-moz-range-track {
     .TestCardSec, .StressTestSec, .StressDetailSec, .Live_testDetailSec, .LiveTotalSec {
         padding: 50px;
     }
+    nav .logo{
+        width: auto !important;
+    }
     .TestCardSec .InnerBox .col {
         width: 100%;
         margin-bottom: 50px;
