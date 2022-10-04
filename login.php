@@ -8,7 +8,7 @@
                     <input type="email" name="email" placeholder="Enter email" class="form-control" required />
                     <label class="mb-2">Password</label>
                     <input type="password" name="password"  class="form-control" placeholder="*****">
-                    <div class="button w-100 text-center"><a href="admin" class="text-decoration-none fw-bold text-white">Login</a></div>
+                    <div class="button w-100 text-center"><a href="#" class="text-decoration-none fw-bold text-white">Login</a></div>
                 </form>
             </div>
         </div>

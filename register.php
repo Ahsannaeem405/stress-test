@@ -16,7 +16,7 @@
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label p-1" for="flexCheckDefault">I agree to the <b>Terms & Conditions</b>.</label>
                     </div>
-                    <div class="button w-100 text-center"><a href="admin" class="text-decoration-none fw-bold text-white">Register</a></div>
+                    <div class="button w-100 text-center"><a href="#" class="text-decoration-none fw-bold text-white">Register</a></div>
                 </form>
             </div>
         </div>
