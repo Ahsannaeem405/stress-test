@@ -24,7 +24,7 @@
     <div class="InnerMain">
         <div class="header">
             <div class="container p-0 ">
-                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <nav class="navbar navbar-expand-lg navbar-light p-2">
                     <a class="navbar-brand logo" href="/">
                         <img src="./images/arb-logo.png" alt="Logo" height="100" />
                     </a>
