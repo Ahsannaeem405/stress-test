@@ -42,7 +42,7 @@
         // pieSeries.labels.template.enabled = true;
         // pieSeries.ticks.template.enabled = true;
         // // pieSeries.translate.template.disabled = true;
-
+ 
         // // chart.legend = new am4charts.Legend();
         // // chart.legend.position = "right";
 

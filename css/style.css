@@ -60,6 +60,8 @@ nav .logo{
 .Live_testDetailSec,
 .LiveTotalSec{
     padding: 70px 0;
+    overflow: hidden;
+    clear: both;
 }
 .TestCardSec .InnerBox .col {
     background-color: rgb(215, 166, 37);
@@ -151,6 +153,10 @@ nav .logo{
     padding: 30px !important;
     box-shadow: 2px 3px 11px #d7a625;
     border-radius: 10px;
+}
+.Innerdetail .btnNext{
+    text-align: cenetr !important;
+    float: none !important;
 }
 .Innerdetail .btnNext, 
 .StressTestSec .table tr .btnNext {
@@ -371,7 +377,7 @@ input[type="range"]::-moz-range-track {
 
 @media only screen and (max-width: 768px) and (min-width: 300px){
     .TestCardSec, .StressTestSec, .StressDetailSec, .Live_testDetailSec, .LiveTotalSec {
-        padding: 50px;
+        padding: 50px 20px;
     }
     nav .logo{
         width: auto !important;
@@ -383,8 +389,16 @@ input[type="range"]::-moz-range-track {
     .TestCardSec .InnerBox .col:hover {
         transform: none;
     }
-    .Innerdetail {
+    .Innerdetail{
         width: 100% !important;
+    }
+    .LoginSec form{
+        width: 80% !important;
+        overflow: hidden;
+        clear: both;
+    }
+    .LoginSec form .button a {
+        padding: 15px 3em;
     }
     .StressTestPage .row{
         overflow-x: scroll;
@@ -393,8 +407,9 @@ input[type="range"]::-moz-range-track {
         padding: 50px 0 !important;
     }
     .stressTotal .text-start p.mt-3 {
-        height: 100px;
-        max-height: 300px;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
     }
     .stressTotal .text-start p.mt-3 span {
         width: 100%;
