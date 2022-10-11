@@ -46,7 +46,7 @@ class AdminController extends Controller
 
     public function live_test_delete($id)
     {
-        $user = Live::where('id',$id);
+        $user = Live::where('user_id',$id)->first();
         if($user)
         {
             $user->delete();
@@ -55,7 +55,7 @@ class AdminController extends Controller
     }
     //--------------------------------------------- Admin Live Tests End---------------------------------------------//
 
-    //--------------------------------------------- Admin Live Tests Start---------------------------------------------//
+    //--------------------------------------------- Admin Stress Tests Start---------------------------------------------//
     public function stress_tests_index()
     {
         $tests = DB::table('stress')
@@ -65,7 +65,24 @@ class AdminController extends Controller
         // dd($tests);
         return view('admin.stress-tests',compact('tests'));
     }
-    //--------------------------------------------- Admin Live Tests End---------------------------------------------//
+
+    public function stress_test_review($id)
+    {
+        $live = Stress::where('user_id',$id)->first();
+        return view('admin.stress-test-review',compact('live'));
+    }
+
+    public function stress_test_delete($id)
+    {
+        $user = Stress::where('user_id',$id)->first();
+        if($user)
+        {
+            $user->delete();
+            return back()->with('success','Record Deleted Successfully');
+        }
+    }
+    //--------------------------------------------- Admin Stress Tests End---------------------------------------------//
+
     //--------------------------------------------- Admin Settings Start---------------------------------------------//
     public function settings_index()
     {

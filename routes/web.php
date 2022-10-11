@@ -50,10 +50,12 @@ Route::group(['prefix' => 'admin','middleware' => ['auth','admin']], function(){
     Route::get('/users',[AdminController::class,'users_index'])->name('users');
     Route::get('/live-tests',[AdminController::class,'live_tests_index'])->name('live-tests');
     Route::get('/stress-tests',[AdminController::class,'stress_tests_index'])->name('stress-tests');
-    Route::get('/settings',[AdminController::class,'settings_index'])->name('settings');
+    Route::get('stress-test-review/{id}',[AdminController::class,'stress_test_review'])->name('stress-test-review');
+    Route::get('/stress-tests/{id}',[AdminController::class,'stress_test_delete'])->name('stress-test-delete');
     Route::post('/settings/update_profile/{id}',[AdminController::class,'update_profile'])->name('update-profile');
     Route::post('/settings/update_password/{id}',[AdminController::class,'update_password'])->name('update-password');
     Route::get('/live-test-review/{id}',[AdminController::class,'live_test_review'])->name('live-test-review');
     Route::get('/live-tests/{id}',[AdminController::class,'live_test_delete'])->name('live-test-delete');
+    Route::get('/settings',[AdminController::class,'settings_index'])->name('settings');
 });
 // Admin Routes End //

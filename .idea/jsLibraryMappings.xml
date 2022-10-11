@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{Chart.js, charts, core, exporting, highcharts, highcharts-3d, jquery-1.12.4, jquery-3.5.1.slim, jquery-validation, jquery.easy-pie-chart, scroll-out, simplePagination.js, splitting, tailwindcss, twbs-pagination, twitter-bootstrap}" />
-  </component>
-</project>
