@@ -211,14 +211,6 @@
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault2" value="rarely"></td>
                             <td><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault1" value="never"></td>
                         </tr>
-                        <tr class="list-item">
-                            <td>Ændret dine spisevaner og spist mere usundt?</td>
-                            <td><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault1" value="constant" ></td>
-                            <td><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault2"  value="frequently"></td>
-                            <td><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault1" value="sometimes"></td>
-                            <td><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault2" value="rarely"></td>
-                            <td><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault1" value="never"></td>
-                        </tr>
                         <tr class="list-item position-relative bg-white">
                             <td></td>
                             <td></td>

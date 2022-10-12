@@ -11,7 +11,7 @@
         <div class="InnerBox text-center">
             <div class="col">
                 <img src="{{asset('assets/images/brain.png')}}" />
-                <h3>Stress Test</h3>
+                <h3>Arbejdsstress Test</h3>
                 <div class="HoverBtn d-none">
                     @if(Auth::user())
                     <a href="{{route('stress-test-details')}}" class="text-decoration-none btnNext">Next</a>
@@ -22,7 +22,7 @@
             </div>
             <div class="col">
                 <img src="{{asset('assets/images/test.png')}}" />
-                <h3>Live Test</h3>
+                <h3>Livshjuls Test</h3>
                 <div class="HoverBtn d-none">
                     @if(Auth::user())
                     <a href="{{route('live-test-details')}}" class="text-decoration-none btnNext">Next</a>

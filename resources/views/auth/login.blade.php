@@ -21,8 +21,10 @@
                     <strong>{{ $message }}</strong>
                 </span>
                 @enderror
+                <div><a href="{{route('register')}}" style="color: black; float: right;">don't have account! Registered here</a></div>
                 <div class="button w-100 text-center"><button type="submit" type="submit" class="text-decoration-none fw-bold text-white">Login</button></div>
             </form>
+            
         </div>
     </div>
 </div>
