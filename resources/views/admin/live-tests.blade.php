@@ -90,7 +90,7 @@
                 <!-- dataTable ends -->
 
                 <!-- add new sidebar starts -->
-                <div class="add-new-data-sidebar">
+                {{-- <div class="add-new-data-sidebar">
                     <div class="overlay-bg"></div>
                     <div class="add-new-data">
                         <div class="div mt-2 px-2 d-flex new-data-title justify-content-between">
@@ -147,7 +147,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <!-- add new sidebar ends -->
             </section>
             <!-- Data list view end -->
