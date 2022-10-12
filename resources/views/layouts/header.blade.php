@@ -46,6 +46,9 @@
                             @endif
                             @if(Auth::user())
                             <li class="nav-item AdminIcon">
+                                <a class="nav-link loginBtn rounded" href="{{route('my-test')}}">My Tests</a>
+                            </li>
+                            <li class="nav-item AdminIcon">
                                 <a class="nav-link loginBtn rounded" href="{{route('logout')}}">Logout</a>
                             </li>
                             @endif

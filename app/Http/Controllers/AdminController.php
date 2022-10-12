@@ -25,6 +25,39 @@ class AdminController extends Controller
         $users = User::where('role','user')->get();
         return view('admin.users',compact('users'));
     }
+
+    public function edit_users($id)
+    {
+        $user = User::where('id',$id)->first();
+        if($user)
+        {
+            return view('admin.edit-user',compact('user'));
+        }
+    }
+
+    public function update_user(Request $request)
+    {
+        $user = User::findorfail($request->id);
+        {
+            if($user)
+            {
+                $user->name = $request->name;
+                $user->email = $request->email;
+                $user->save();
+                return redirect()->route('users')->with('success','User Updated Successfully');
+            }
+        }
+    }
+
+    public function delete_user($id)
+    {
+        $user = where('id',$id)->first();
+        if($user)
+        {
+            $user->delete();
+            return back()->with('success', 'User Deleted Successfully');
+        }
+    }
     //--------------------------------------------- Admin Users End---------------------------------------------//
 
 

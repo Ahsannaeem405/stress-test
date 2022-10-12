@@ -24,12 +24,13 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
     public function index()
     {
         return view('home');
     }
 
-    // Live Test Controllers Start
+   //---------------------------------------------User Live-Test Start---------------------------------------------//
 
     public function live_test_index()
     {
@@ -67,20 +68,39 @@ class HomeController extends Controller
     public function live_total_index()
     {
         $tests = Live::where('user_id',Auth::user()->id)->get();
-        // dd($tests);
         return view('live-test.live-total',compact('tests'));
     }
+//---------------------------------------------User Live-Test End---------------------------------------------//
 
-    // Live Test Controllers End
 
-
-    public function my_products_index()
+//---------------------------------------------User My-Test Start---------------------------------------------//
+    public function my_test_index()
     {
-        return view('my-products');
+        $lives = Live::where('user_id',Auth::user()->id)->get();
+        $stresses = Stress::where('user_id',Auth::user()->id)->get();
+        return view('my-tests.my-test',compact('lives','stresses'));
     }
 
-    // Stress Test Controllers Start
+    public function my_live_test_review($id)
+    {
+        $live = Live::where('id',$id)->first();
+        if($live)
+        {
+            return view('my-tests.my-live-test-review',compact('live'));
+        }
+    }
 
+    public function my_stress_test_review($id)
+    {
+        $stress = Stress::where('id',$id)->first();
+        if($stress)
+        {
+            return view('my-tests.my-stress-test-review',compact('stress'));
+        }
+    }
+//---------------------------------------------User My-Test Start---------------------------------------------//
+
+//---------------------------------------------User Stress-Test Start---------------------------------------------//
     public function stress_test_index()
     {
         return view('stress-test.stress-test');
@@ -131,11 +151,10 @@ class HomeController extends Controller
     public function stress_total_index()
     {
         $tests = Stress::where('user_id',Auth::user()->id)->get();
-        // dd($tests);
         return view('stress-test.stress-total',compact('tests'));
     }
 
-    // Stress Test Controllers End
+    //---------------------------------------------User Stress-Test End---------------------------------------------//
 
     public function contact_us_index()
     {

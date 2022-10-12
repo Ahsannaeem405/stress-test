@@ -81,9 +81,14 @@
                                 </td> --}}
                                 <td class="product-price">{{$user->role}}</td>
                                 <td class="product-price">{{$user->created_at->format('d-m-Y')}}</td>
-                                <td class="product-action">
-                                    <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                    <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                <td class="product-action" style="display: flex;">
+                                    <a href="{{route('edit-user',$user->id)}}"><span class="action-edit"><i class="feather icon-edit text-success"></i></span></a>&nbsp;&nbsp;
+                                    <form method="POST" action="{{ route('delete-user', $user->id) }}">
+                                        @csrf
+                                        <input name="_method" type="hidden" value="GET">
+                                        {{-- <span class="action-delete show_confirm"><i class="feather icon-trash text-danger"></i></span> --}}
+                                        <button type="submit" class="show_confirm" style="border: none; background:transparent;"><i class="feather icon-trash text-danger"></i></button>
+                                    </form>
                                 </td>
                             </tr>
                             @endforeach
@@ -93,7 +98,7 @@
                 <!-- dataTable ends -->
 
                 <!-- add new sidebar starts -->
-                <div class="add-new-data-sidebar">
+                {{-- <div class="add-new-data-sidebar">
                     <div class="overlay-bg"></div>
                     <div class="add-new-data">
                         <div class="div mt-2 px-2 d-flex new-data-title justify-content-between">
@@ -109,7 +114,11 @@
                                 <div class="row">
                                     <div class="col-sm-12 data-field-col">
                                         <label for="data-name">Name</label>
-                                        <input type="text" class="form-control" id="data-name">
+                                        <input type="text" class="form-control" name="name" value="{{$user->name}}" id="data-name">
+                                    </div>
+                                    <div class="col-sm-12 data-field-col">
+                                        <label for="data-name">Email</label>
+                                        <input type="email" class="form-control" name="email" value="{{$user->email}}" id="data-name">
                                     </div>
                                     <div class="col-sm-12 data-field-col">
                                         <label for="data-category"> Category </label>
@@ -143,14 +152,14 @@
                         </div>
                         <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
                             <div class="add-data-btn">
-                                <button class="btn btn-primary">Add Data</button>
+                                <button class="btn btn-primary">Update</button>
                             </div>
                             <div class="cancel-data-btn">
                                 <button class="btn btn-outline-danger">Cancel</button>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <!-- add new sidebar ends -->
             </section>
             <!-- Data list view end -->
@@ -159,4 +168,25 @@
     </div>
 </div>
 <!-- END: Content-->
+@push('sweet-alert-script')
+<script type="text/javascript">
+    $('.show_confirm').click(function(event) {
+        var form =  $(this).closest("form");
+        var name = $(this).data("name");
+        event.preventDefault();
+        swal({
+            title: `Are you sure you want to delete this record?`,
+            text: "If you delete this, it will be gone forever.",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+        .then((willDelete) => {
+        if (willDelete) {
+            form.submit();
+        }
+        });
+    });
+</script>
+@endpush
 @endsection

@@ -166,7 +166,7 @@ nav .logo{
     color: #474f59;
     font-size: 20px;
     border: 1px solid #dee2e6;
-    float: right;
+    /* float: right; */
 }
 .StressTestSec .table tr .btnNext:hover{
     background-color: #f7f7f7;
