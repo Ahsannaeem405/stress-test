@@ -5,6 +5,11 @@
     <div class="content-overlay"></div>
     <div class="header-navbar-shadow"></div>
     <div class="content-wrapper">
+        <div class="container">
+            <div>
+                <div id="pie" style="height: 500px;"></div>
+            </div>
+        </div>
         <div class="content-header row p-2">
             <div class="content-header-left col-md-9 col-12 mb-2">
                 <div class="row breadcrumbs-top">
@@ -12,7 +17,7 @@
                         <h2 class="content-header-title float-left mb-0">Live Test Review</h2>
                         <div class="breadcrumb-wrapper col-12">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a>
+                                <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Home</a>
                                 </li>
                                 <li class="breadcrumb-item active">Live Test Review
                                 </li>
@@ -122,4 +127,58 @@
         </div>
     </div>
 </div>
+
+<script>
+    // pie chart for stress
+    Highcharts.chart('pie', {
+        chart: {
+            type: 'pie',
+            options3d: {
+                enabled: true,
+                alpha: 45
+            },
+            backgroundColor: "transparent",
+            
+        },
+        title: {
+            text: '<h1>Livshjulet</h1>'
+        },
+        // subtitle: {
+        //     text: 'As per statistics data 2016'
+        // },
+        plotOptions: {
+            pie: {
+                innerSize: 100,
+                depth: 65,
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name} ({point.percentage:.1f}%)',
+                    connectorWidth: 2,
+                }
+            }
+        },
+        colors:['#3b5998', '#d34836', '#8a3ab9', '#0077B5', '#0084b4', '#bb0000', '#ccc', '#ddd'],
+        series: [{
+            name: 'Live Test Marks',
+            data: [
+                    ['Personlig udvikling', <?php echo $live['personal'];?>],
+                    ['Parforhold / Kærlighed  ', <?php echo $live['relationship'];?>],
+                    ['Venner / Familie', <?php echo $live['family'];?>],
+                    // {name:'LinkedIn',  y:450, sliced: true,selected: true},
+                    ['Børn', <?php echo $live['children'];?>],
+                    ['Arbejdsliv', <?php echo $live['working'];?>],
+                    ['Helbred ', <?php echo $live['health'];?>],
+                    ['Fritid ', <?php echo $live['leisure'];?>],
+                    ['Økonomi / Velstand', <?php echo $live['finance'];?>],
+            ]
+        }],
+        // tooltip:{
+        //     useHTML: true,
+        //     headerFormat: '<h2>{point.key}</h2>',
+        //     pointFormat: '<h4>{point.percentage:.1f} {series.name} </h4>',
+        // }
+    });
+</script>
 @endsection

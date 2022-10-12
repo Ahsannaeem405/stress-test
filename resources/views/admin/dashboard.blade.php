@@ -23,8 +23,8 @@
                                         </div>
                                     </div>
                                     <div class="text-center">
-                                        <h1 class="mb-2 text-white">Congratulations John,</h1>
-                                        <p class="m-auto w-75">You have done <strong>57.6%</strong> more sales today. Check your new badge in your profile.</p>
+                                        <h1 class="mb-2 text-white">Congratulations {{Auth::user()->name}},</h1>
+                                        {{-- <p class="m-auto w-75">You have done <strong>57.6%</strong> more sales today. Check your new badge in your profile.</p> --}}
                                     </div>
                                 </div>
                             </div>
@@ -35,11 +35,11 @@
                             <div class="card-header d-flex flex-column align-items-start pb-0">
                                 <div class="avatar bg-rgba-primary p-50 m-0">
                                     <div class="avatar-content">
-                                        <i class="feather icon-users text-primary font-medium-5"></i>
+                                        <i class="feather icon-file-text text-primary font-medium-5"></i>
                                     </div>
                                 </div>
-                                <h2 class="text-bold-700 mt-1 mb-25">92.6k</h2>
-                                <p class="mb-0">Subscribers Gained</p>
+                                <h2 class="text-bold-700 mt-1 mb-25">{{$stress}}</h2>
+                                <p class="mb-0">Total Stress Test</p>
                             </div>
                             <div class="card-content">
                                 <div id="subscribe-gain-chart"></div>
@@ -51,11 +51,11 @@
                             <div class="card-header d-flex flex-column align-items-start pb-0">
                                 <div class="avatar bg-rgba-warning p-50 m-0">
                                     <div class="avatar-content">
-                                        <i class="feather icon-package text-warning font-medium-5"></i>
+                                        <i class="feather icon-file-text text-warning font-medium-5"></i>
                                     </div>
                                 </div>
-                                <h2 class="text-bold-700 mt-1 mb-25">97.5K</h2>
-                                <p class="mb-0">Orders Received</p>
+                                <h2 class="text-bold-700 mt-1 mb-25">{{$live}}</h2>
+                                <p class="mb-0">Total Life Test</p>
                             </div>
                             <div class="card-content">
                                 <div id="orders-received-chart"></div>

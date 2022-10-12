@@ -14,7 +14,9 @@ class AdminController extends Controller
     //---------------------------------------------Admin Dashboard Start---------------------------------------------//
     public function dashboard_index()
     {
-        return view('admin.dashboard');
+        $stress = Stress::count();
+        $live = Live::count();
+        return view('admin.dashboard',compact('stress','live'));
     }
     //--------------------------------------------- Admin Dashboard End---------------------------------------------//
 
@@ -102,7 +104,15 @@ class AdminController extends Controller
     public function stress_test_review($id)
     {
         $live = Stress::where('user_id',$id)->first();
-        return view('admin.stress-test-review',compact('live'));
+        $make_array = $live->toArray();
+        $check_count = array_count_values($make_array);
+        $constant = $check_count[4];
+        $frequently = $check_count[3];
+        $sometime = $check_count[2];
+        $rarely = $check_count[1];
+        $never = $check_count[0];
+        $total = ($constant+$frequently+$sometime+$rarely+$never);
+        return view('admin.stress-test-review',compact('live','constant','frequently','sometime','rarely','never','total'));
     }
 
     public function stress_test_delete($id)

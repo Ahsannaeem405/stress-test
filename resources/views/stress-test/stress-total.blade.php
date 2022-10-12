@@ -3,29 +3,24 @@
 <div class="StressDetailSec stressTotal">
     <div class="container">
         <div class="StressTotalSec">
-            <!-- <div class="container">
-                <div>
-                    <h2 class="text-center mb-4">Total: 110</h2>
-<!--                        <canvas id="myChart"></canvas>
-                    <div id="chartdiv"></div>
-                </div>
-            </div> -->
-
             <div class="widget text-center mb-5">
                 <h2 class="header1">Arbejdsstress Total</h2>
                 <div id="chart" class="chart-container"></div>
             </div>
         </div>
-        @foreach($tests as $test)
-        {{$test->flexRadioDefault}}
-        @endforeach
         <div class="row">
             <div class="Innerdetail text-start">
+                @if($total>=0 && $total<=23)
                 <p class="mt-3 skycolor" style="background: #00ffff;">Stresstilstand: <strong> 00-23:</strong> I balance <span class="float-end">Du er ikke stresset</span> </p>
+                @elseif($total>=24 && $total<=37)
                 <p class="mt-3 green" style="background: #37ff37;">Stresstilstand: <strong> 24-37: </strong>Let stress <span class="float-end">Du er ikke stresset, men oplever og føler dig i perioder stresset</span> </p>
+                @elseif($total>=38 && $total<=67)
                 <p class="mt-3 yellow" style="background: #ffff00;">Stresstilstand: <strong> 38-67:</strong> Moderat stress <span class="float-end">Du er stresset og bør gøre noget ved det</span> </p>
+                @elseif($total>=68 && $total<=96)
                 <p class="mt-3 red" style="background: #ff0000;color: #fff;">Stresstilstand: <strong> 68-96:</strong> Alvorlig stress <span class="float-end">Du er stresset og skal gøre noget ved det</span> </p>
+                @elseif($total>=97 && $total<=100)
                 <p class="mt-3 mb-5 black" style="background: #000; color: #f7f7f7;">Stresstilstand: <strong> 97-:</strong> Kritisk stress <span class="float-end">Du er udmattet – og har behov for ro, restituering og hjælp</span> </p>
+                @endif
             </div>
         </div>
     </div>
@@ -65,11 +60,11 @@
     // label.fontSize = 40;
 
     var dataset = [
-    { name: 'Konstant ', count: 243 },
-    { name: 'Hyppigt ', count: 2242 },
-    { name: 'Nogle gange', count: 3112},
-    { name: 'Sjældent ', count: 937 },
-    { name: 'Aldrig', count: 1450 }
+    { name: 'Konstant ', count: {{$constant}} },
+    { name: 'Hyppigt ', count: {{$frequently}} },
+    { name: 'Nogle gange', count: {{$sometime}}},
+    { name: 'Sjældent ', count: {{$rarely}} },
+    { name: 'Aldrig', count: {{$never}} }
     ];
 
     var total=0;

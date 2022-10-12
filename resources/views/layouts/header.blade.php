@@ -46,6 +46,12 @@
                             @endif
                             @if(Auth::user())
                             <li class="nav-item AdminIcon">
+                                <a class="nav-link loginBtn rounded" href="{{route('stress-test')}}">Stress Test</a>
+                            </li>
+                            <li class="nav-item AdminIcon">
+                                <a class="nav-link loginBtn rounded" href="{{route('live-test')}}">Life Test</a>
+                            </li>
+                            <li class="nav-item AdminIcon">
                                 <a class="nav-link loginBtn rounded" href="{{route('my-test')}}">My Tests</a>
                             </li>
                             <li class="nav-item AdminIcon">

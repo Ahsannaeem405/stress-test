@@ -93,9 +93,17 @@ class HomeController extends Controller
     public function my_stress_test_review($id)
     {
         $stress = Stress::where('id',$id)->first();
+        $make_array = $stress->toArray();
+        $check_count = array_count_values($make_array);
+        $constant = $check_count[4];
+        $frequently = $check_count[3];
+        $sometime = $check_count[2];
+        $rarely = $check_count[1];
+        $never = $check_count[0];
+        $total = ($constant+$frequently+$sometime+$rarely+$never);
         if($stress)
         {
-            return view('my-tests.my-stress-test-review',compact('stress'));
+            return view('my-tests.my-stress-test-review',compact('stress','constant','frequently','sometime','rarely','never','total'));
         }
     }
 //---------------------------------------------User My-Test Start---------------------------------------------//
@@ -150,8 +158,16 @@ class HomeController extends Controller
 
     public function stress_total_index()
     {
-        $tests = Stress::where('user_id',Auth::user()->id)->get();
-        return view('stress-test.stress-total',compact('tests'));
+        $tests = Stress::where('user_id',Auth::user()->id)->first();
+        $make_array = $tests->toArray();
+        $check_count = array_count_values($make_array);
+        $constant = $check_count[4];
+        $frequently = $check_count[3];
+        $sometime = $check_count[2];
+        $rarely = $check_count[1];
+        $never = $check_count[0];
+        $total = ($constant+$frequently+$sometime+$rarely+$never);
+        return view('stress-test.stress-total',compact('constant','frequently','sometime','rarely','never','total'));
     }
 
     //---------------------------------------------User Stress-Test End---------------------------------------------//
