@@ -67,7 +67,7 @@ class HomeController extends Controller
 
     public function live_total_index()
     {
-        $tests = Live::where('user_id',Auth::user()->id)->get();
+        $tests = Live::where('user_id',Auth::user()->id)->orderBy('id','DESC')->first();
         return view('live-test.live-total',compact('tests'));
     }
 //---------------------------------------------User Live-Test End---------------------------------------------//

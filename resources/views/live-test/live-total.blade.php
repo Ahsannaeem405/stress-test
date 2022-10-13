@@ -41,17 +41,15 @@
             series: [{
                 name: 'Live Test Marks',
                 data: [
-                    <?php for ($i=0; $i <count($tests); $i++) {?>
-                        ['Personlig udvikling', <?php echo $tests[$i]['personal'];?>],
-                        ['Parforhold / Kærlighed  ', <?php echo $tests[$i]['relationship'];?>],
-                        ['Venner / Familie', <?php echo $tests[$i]['family'];?>],
+                        ['Personlig udvikling', <?php echo $tests['personal'];?>],
+                        ['Parforhold / Kærlighed  ', <?php echo $tests['relationship'];?>],
+                        ['Venner / Familie', <?php echo $tests['family'];?>],
                         // {name:'LinkedIn',  y:450, sliced: true,selected: true},
-                        ['Børn', <?php echo $tests[$i]['children'];?>],
-                        ['Arbejdsliv', <?php echo $tests[$i]['working'];?>],
-                        ['Helbred ', <?php echo $tests[$i]['health'];?>],
-                        ['Fritid ', <?php echo $tests[$i]['leisure'];?>],
-                        ['Økonomi / Velstand', <?php echo $tests[$i]['finance'];?>],
-                    <?php } ?>
+                        ['Børn', <?php echo $tests['children'];?>],
+                        ['Arbejdsliv', <?php echo $tests['working'];?>],
+                        ['Helbred ', <?php echo $tests['health'];?>],
+                        ['Fritid ', <?php echo $tests['leisure'];?>],
+                        ['Økonomi / Velstand', <?php echo $tests['finance'];?>],
                 ]
             }],
             // tooltip:{
