@@ -228,6 +228,12 @@
         </div>
     </div>
 </div>
+<style>
+    .row>*{
+        padding-right: 0px !important;
+         padding-left: 0px !important;
+    }
+</style>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script>
      $(document).ready(function(){

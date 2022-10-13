@@ -92,14 +92,15 @@ class HomeController extends Controller
 
     public function my_stress_test_review($id)
     {
-        $stress = Stress::where('id',$id)->first();
+        $stress = Stress::select('flexRadioDefault','flexRadioDefault1','flexRadioDefault2','flexRadioDefault3','flexRadioDefault4','flexRadioDefault6','flexRadioDefault7','flexRadioDefault8','flexRadioDefault9','flexRadioDefault10','flexRadioDefault11','flexRadioDefault12','flexRadioDefault13','flexRadioDefault14','flexRadioDefault15','flexRadioDefault16','flexRadioDefault17','flexRadioDefault18','flexRadioDefault19','flexRadioDefault20','flexRadioDefault21','flexRadioDefault22','flexRadioDefault23')
+        ->where('user_id',Auth::user()->id)->first();
         $make_array = $stress->toArray();
         $check_count = array_count_values($make_array);
-        $constant = $check_count[4];
-        $frequently = $check_count[3];
-        $sometime = $check_count[2];
-        $rarely = $check_count[1];
-        $never = $check_count[0];
+        $constant = ($check_count[4]*4);
+        $frequently = ($check_count[3]*3);
+        $sometime = ($check_count[2]*2);
+        $rarely = ($check_count[1]*1);
+        $never = ($check_count[0]*0);
         $total = ($constant+$frequently+$sometime+$rarely+$never);
         if($stress)
         {
@@ -158,14 +159,15 @@ class HomeController extends Controller
 
     public function stress_total_index()
     {
-        $tests = Stress::where('user_id',Auth::user()->id)->first();
+        $tests = Stress::select('flexRadioDefault','flexRadioDefault1','flexRadioDefault2','flexRadioDefault3','flexRadioDefault4','flexRadioDefault6','flexRadioDefault7','flexRadioDefault8','flexRadioDefault9','flexRadioDefault10','flexRadioDefault11','flexRadioDefault12','flexRadioDefault13','flexRadioDefault14','flexRadioDefault15','flexRadioDefault16','flexRadioDefault17','flexRadioDefault18','flexRadioDefault19','flexRadioDefault20','flexRadioDefault21','flexRadioDefault22','flexRadioDefault23')
+        ->where('user_id',Auth::user()->id)->first();
         $make_array = $tests->toArray();
         $check_count = array_count_values($make_array);
-        $constant = $check_count[4];
-        $frequently = $check_count[3];
-        $sometime = $check_count[2];
-        $rarely = $check_count[1];
-        $never = $check_count[0];
+        $constant = ($check_count[4]*4);
+        $frequently = ($check_count[3]*3);
+        $sometime = ($check_count[2]*2);
+        $rarely = ($check_count[1]*1);
+        $never = ($check_count[0]*0);
         $total = ($constant+$frequently+$sometime+$rarely+$never);
         return view('stress-test.stress-total',compact('constant','frequently','sometime','rarely','never','total'));
     }

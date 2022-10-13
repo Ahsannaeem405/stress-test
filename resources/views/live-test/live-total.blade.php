@@ -31,7 +31,8 @@
                     cursor: 'pointer',
                     dataLabels: {
                         enabled: true,
-                        format: '{point.name} ({point.percentage:.1f}%)',
+                        // format: '{point.name} ({point.percentage:.1f}%)',
+                        format: '{point.name} ({point.y:1f})',
                         connectorWidth: 2,
                     }
                 }

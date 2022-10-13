@@ -336,13 +336,33 @@
     };
 
     createChart(svg,outerRadiusArc,innerRadiusArc,function(d,i){
-    return color(d.data.name);
+    // return color(d.data.name);
+    if(total >=0 && total<=23)
+    {
+        return color = "#00ffff";
+    }
+    if(total>=24 && total<=37)
+    {
+        return color = "#37ff37";
+    }
+    if(total>=38 && total<=67)
+    {
+        return color = "#ffff00";
+    }
+    if(total>=68 && total<=96)
+    {
+        return color = "#ff0000";
+    }
+    else
+    {
+        return color = "#000";
+    }
     },'path1');
 
-    createChart(svg,outerRadiusArcShadow,innerRadiusArcShadow,function(d,i){
-    var c=d3.hsl(color(d.data.name));
-    return d3.hsl((c.h+5), (c.s -.07), (c.l -.15));
-    },'path2');
+    // createChart(svg,outerRadiusArcShadow,innerRadiusArcShadow,function(d,i){
+    // var c=d3.hsl(color(d.data.name));
+    // return d3.hsl((c.h+5), (c.s -.07), (c.l -.15));
+    // },'path2');
 
     var addText= function (text,y,size) {
     svg.append('text')

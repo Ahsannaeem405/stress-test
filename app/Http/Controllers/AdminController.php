@@ -106,11 +106,11 @@ class AdminController extends Controller
         $live = Stress::where('user_id',$id)->first();
         $make_array = $live->toArray();
         $check_count = array_count_values($make_array);
-        $constant = $check_count[4];
-        $frequently = $check_count[3];
-        $sometime = $check_count[2];
-        $rarely = $check_count[1];
-        $never = $check_count[0];
+        $constant = ($check_count[4]*4);
+        $frequently = ($check_count[3]*3);
+        $sometime = ($check_count[2]*2);
+        $rarely = ($check_count[1]*1);
+        $never = ($check_count[0]*0);
         $total = ($constant+$frequently+$sometime+$rarely+$never);
         return view('admin.stress-test-review',compact('live','constant','frequently','sometime','rarely','never','total'));
     }

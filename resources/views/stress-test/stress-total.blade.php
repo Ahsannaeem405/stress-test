@@ -27,38 +27,6 @@
 </div>
 @push('stress-chart-script')
 <script>
-    //    Stress Chart
-    // Create chart instance
-    // var chart = am4core.create("chartdiv", am4charts.PieChart);
-
-    // // Add data
-    // chart.data = [
-    //     {"Test": "Konstant", "value": 201},
-    //     {"Test": "Hyppigt", "value": 301},
-    //     {"Test": "Nogle gange", "value": 201},
-    //     {"Test": "Sjældent", "value": 165},
-    //     {"Test": "Aldrig", "value": 139},
-    // ];
-
-    // // Add and configure Series
-    // var pieSeries = chart.series.push(new am4charts.PieSeries());
-    // pieSeries.dataFields.value = "value";
-    // pieSeries.dataFields.category = "Test";
-    // pieSeries.labels.template.enabled = true;
-    // pieSeries.ticks.template.enabled = true;
-    // // pieSeries.translate.template.disabled = true;
-
-    // // chart.legend = new am4charts.Legend();
-    // // chart.legend.position = "right";
-
-    // chart.innerRadius = am4core.percent(60);
-
-    // var label = pieSeries.createChild(am4core.Label);
-    // // label.text = "{values.value.sum}";
-    // label.horizontalCenter = "middle";
-    // label.verticalCenter = "middle";
-    // label.fontSize = 40;
-
     var dataset = [
     { name: 'Konstant ', count: {{$constant}} },
     { name: 'Hyppigt ', count: {{$frequently}} },
@@ -110,7 +78,7 @@
         .attr({
             class:className,
             d:arc,
-            fill:fillFunction
+            fill:fillFunction,
         });
 
     path.transition()
@@ -124,13 +92,33 @@
     };
 
     createChart(svg,outerRadiusArc,innerRadiusArc,function(d,i){
-    return color(d.data.name);
+    // return color(d.data.name);
+    if(total >=0 && total<=23)
+    {
+        return color = "#00ffff";
+    }
+    if(total>=24 && total<=37)
+    {
+        return color = "#37ff37";
+    }
+    if(total>=38 && total<=67)
+    {
+        return color = "#ffff00";
+    }
+    if(total>=68 && total<=96)
+    {
+        return color = "#ff0000";
+    }
+    else
+    {
+        return color = "#000";
+    }
     },'path1');
 
-    createChart(svg,outerRadiusArcShadow,innerRadiusArcShadow,function(d,i){
-    var c=d3.hsl(color(d.data.name));
-    return d3.hsl((c.h+5), (c.s -.07), (c.l -.15));
-    },'path2');
+    // createChart(svg,outerRadiusArcShadow,innerRadiusArcShadow,function(d,i){
+    // var c=d3.hsl(color(d.data.name));
+    // return d3.hsl((c.h+5), (c.s -.07), (c.l -.15));
+    // },'path2');
 
     var addText= function (text,y,size) {
     svg.append('text')
