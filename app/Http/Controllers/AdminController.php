@@ -93,9 +93,9 @@ class AdminController extends Controller
     //--------------------------------------------- Admin Stress Tests Start---------------------------------------------//
     public function stress_tests_index()
     {
-        $tests = DB::table('stress')
-        ->leftJoin('users','stress.user_id','=','users.id')
+        $tests = DB::table('users')
         ->where('role','user')
+        ->leftJoin('stress','users.id','=','stress.user_id')
         ->get();
         // dd($tests);
         return view('admin.stress-tests',compact('tests'));
@@ -103,14 +103,52 @@ class AdminController extends Controller
 
     public function stress_test_review($id)
     {
-        $live = Stress::where('user_id',$id)->first();
+        $live = Stress::select('flexRadioDefault','flexRadioDefault1','flexRadioDefault2','flexRadioDefault3','flexRadioDefault4','flexRadioDefault6','flexRadioDefault7','flexRadioDefault8','flexRadioDefault9','flexRadioDefault10','flexRadioDefault11','flexRadioDefault12','flexRadioDefault13','flexRadioDefault14','flexRadioDefault15','flexRadioDefault16','flexRadioDefault17','flexRadioDefault18','flexRadioDefault19','flexRadioDefault20','flexRadioDefault21','flexRadioDefault22','flexRadioDefault23')
+        ->where('id',$id)->first();
+        // dd($live);
         $make_array = $live->toArray();
         $check_count = array_count_values($make_array);
-        $constant = ($check_count[4]*4);
-        $frequently = ($check_count[3]*3);
-        $sometime = ($check_count[2]*2);
-        $rarely = ($check_count[1]*1);
-        $never = ($check_count[0]*0);
+        if(isset($check_count[4]))
+        {
+            $constant = ($check_count[4]*4);
+        }
+        else 
+        {
+            $constant=0;
+        }
+        if(isset($check_count[3]))
+        {
+            $frequently = ($check_count[3]*3);
+        }
+        else
+        {
+            $frequently=0;
+        }
+        if(isset($check_count[2]))
+        {
+            $sometime = ($check_count[2]*2);
+        }
+        else
+        {
+            $sometime=0;
+        }
+        if(isset($check_count[1]))
+        {
+
+            $rarely = ($check_count[1]*1);
+        }
+        else
+        {
+            $rarely=0;
+        }
+        if(isset($check_count[1]))
+        {
+            $never = ($check_count[0]*0);
+        }
+        else
+        {
+            $never=0;
+        }
         $total = ($constant+$frequently+$sometime+$rarely+$never);
         return view('admin.stress-test-review',compact('live','constant','frequently','sometime','rarely','never','total'));
     }
