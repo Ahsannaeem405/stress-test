@@ -363,10 +363,12 @@ input[type="range"]::-moz-range-track {
 .LoginSec form {
     margin: 70px auto;
     width: 50%;
-    background-color: rgb(215, 166, 37);
+    color: white;
+    /* background-color: rgb(215, 166, 37); */
+    background-color: rgb(20 0 133);
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 2px 3px 11px #d7a625;
+    box-shadow: 2px 3px 11px rgb(20 0 133);
     transition: 0.4s ease-in;
 }
 .LoginSec form .form-control {
