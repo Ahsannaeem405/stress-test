@@ -35,9 +35,16 @@ class LoginController extends Controller
         {
             return '/admin/dashboard';
         }
-        elseif(Auth::user()->role == "user")
+        if(Auth::user()->role == "user" && Auth::user()->status == 1)
         {
             return '/home';
+        }
+        else
+        {
+            Auth::logout();
+            Session::flush();   
+            Session::flash('error','You Need Admin Approval In Order to login');
+            return '/login';
         }
     }
 

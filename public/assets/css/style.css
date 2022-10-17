@@ -64,7 +64,8 @@ nav .logo{
     clear: both;
 }
 .TestCardSec .InnerBox .col {
-    background-color: rgb(215, 166, 37);
+    /* background-color: rgb(215, 166, 37); */
+    background-color: rgb(20 0 133);
     padding: 50px 0;
     text-align: center;
     margin-right: 70px;
@@ -72,7 +73,7 @@ nav .logo{
     width: calc(calc(100% - 42%)/2);
     border-radius: 33px;
     position: relative;
-    border: 1.5px solid rgb(157 120 24);
+    border: 1.5px solid rgb(20 0 133);
 }
 .TestCardSec .InnerBox .col:last-child{
     margin-right: 0;
@@ -82,12 +83,14 @@ nav .logo{
     margin-bottom: 30px;
 }
 .TestCardSec .InnerBox .col h3{
-    color: #474f59;
+    /* color: #474f59; */
+    color: white;
     font-weight: bold;
     margin-bottom: 20px;
 }
 .TestCardSec .InnerBox .col:hover {
-    box-shadow: 2px 3px 11px #d7a625;
+    /* box-shadow: 2px 3px 11px #d7a625; */
+    box-shadow: 2px 3px 11px rgb(20 0 133);;
     transform: translateX(10px);
     transition: 0.4s ease-in;
 }
@@ -143,7 +146,8 @@ nav .logo{
 /**/
 
 .Innerdetail{
-    background: rgb(215, 166, 37);
+    /* background: rgb(215, 166, 37); */
+    background: rgb(20 0 133);
     color: #f7f7f7;
     text-align: center;
     width: 70% !important;
@@ -151,7 +155,7 @@ nav .logo{
     max-width: 100%;
     line-height: 30px;
     padding: 30px !important;
-    box-shadow: 2px 3px 11px #d7a625;
+    box-shadow: 2px 3px 11px rgb(20, 0, 133);
     border-radius: 10px;
 }
 .Innerdetail .btnNext{
@@ -184,7 +188,9 @@ nav .logo{
     margin: 0;
 }
 .StressTestSec .table thead{
-    background: #f77b55;
+    /* background: #f77b55; */
+    background: rgb(20 0 133);
+    color: white;
 }
 thead th:first-child {
     border-radius: 20px 0 0 0;
@@ -241,7 +247,8 @@ thead th:last-child {
 }
 
 .PaginationBtm{
-    background: #f77b55 !important;
+    /* background: #f77b55 !important; */
+    background: rgb(20 0 133) !important;
     position: relative;
     border-radius: 0px 0px 20px 20px;
     text-align: center;

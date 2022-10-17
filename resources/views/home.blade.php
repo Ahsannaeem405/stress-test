@@ -3,11 +3,11 @@
 @section('content')
 <div class="TestCardSec">
     <div class="container">
-        <div class="marquee">
+        {{-- <div class="marquee">
             <div class="track">
                 <div class="content">&nbsp;Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence</div>
             </div>
-        </div>
+        </div> --}}
         <div class="InnerBox text-center" style="display: flex;">
             <a href="{{route('stress-test-details')}}" style="text-decoration: none;">
                 <div class="col">

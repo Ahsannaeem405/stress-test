@@ -11,7 +11,7 @@
                     <thead>
                     <tr>
                         <th></th>
-                        <th>Konstant</th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tbody>

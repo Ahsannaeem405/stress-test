@@ -53,11 +53,29 @@ class AdminController extends Controller
 
     public function delete_user($id)
     {
-        $user = where('id',$id)->first();
+        $user = User::where('id',$id)->first();
         if($user)
         {
             $user->delete();
             return back()->with('success', 'User Deleted Successfully');
+        }
+    }
+
+    public function approve_user($id)
+    {
+        $user = User::where('id',$id)->first();
+        if($user)
+        {
+            if($user->status==0)
+            {
+                $user->status=1;
+                $user->save();
+            }
+            return back()->with('success','User Approved Successfully');
+        }
+        else
+        {
+            return back()->with('error','Something went wrong please try later !');
         }
     }
     //--------------------------------------------- Admin Users End---------------------------------------------//

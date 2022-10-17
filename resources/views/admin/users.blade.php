@@ -56,6 +56,7 @@
                             <th></th>
                             <th>NAME</th>
                             <th>Email</th>
+                            <th>Status</th>
                             <th>Role</th>
                             <th>Date</th>
                             <th>ACTION</th>
@@ -72,22 +73,39 @@
                                         <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:97%"></div>
                                     </div>
                                 </td> --}}
-                                {{-- <td>
+                                <td>
+                                    @if($user->status == 0)
                                     <div class="chip chip-warning">
                                         <div class="chip-body">
                                             <div class="chip-text">on hold</div>
                                         </div>
                                     </div>
-                                </td> --}}
+                                    @elseif ($user->status == 1)
+                                    <div class="chip chip-success">
+                                        <div class="chip-body">
+                                            <div class="chip-text">Approved</div>
+                                        </div>
+                                    </div>
+                                    @endif
+                                </td>
                                 <td class="product-price">{{$user->role}}</td>
                                 <td class="product-price">{{$user->created_at->format('d-m-Y')}}</td>
                                 <td class="product-action" style="display: flex;">
-                                    <a href="{{route('edit-user',$user->id)}}"><span class="action-edit"><i class="feather icon-edit text-success"></i></span></a>&nbsp;&nbsp;
+                                    @if($user->status == 0)
+                                    <form method="POST" action="{{ route('aprrove-user', $user->id) }}">
+                                        @csrf
+                                        <input name="_method" type="hidden" value="GET">
+                                        <button type="submit" class="approve_confirm btn btn-primary" style="border: none; background:transparent;">Approve</button>&nbsp;&nbsp;
+                                    </form>
+                                    @elseif($user->status == 1)
+                                    <button type="button" class="btn btn-success">Approved</button>&nbsp;&nbsp;
+                                    @endif
+                                    <a href="{{route('edit-user',$user->id)}}"><button class="btn btn-warning"><span class="action-edit"><i class="feather icon-edit text-white font-weight-bold">Edit</i></span></button></a>&nbsp;&nbsp;
                                     <form method="POST" action="{{ route('delete-user', $user->id) }}">
                                         @csrf
                                         <input name="_method" type="hidden" value="GET">
                                         {{-- <span class="action-delete show_confirm"><i class="feather icon-trash text-danger"></i></span> --}}
-                                        <button type="submit" class="show_confirm" style="border: none; background:transparent;"><i class="feather icon-trash text-danger"></i></button>
+                                        <button type="submit" class="show_confirm btn btn-danger" style="border: none; background:transparent;"><i class="feather icon-trash text-white font-weight-bold">Delete</i></button>
                                     </form>
                                 </td>
                             </tr>
@@ -177,6 +195,25 @@
         swal({
             title: `Are you sure you want to delete this record?`,
             text: "If you delete this, it will be gone forever.",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+        .then((willDelete) => {
+        if (willDelete) {
+            form.submit();
+        }
+        });
+    });
+</script>
+<script type="text/javascript">
+    $('.approve_confirm').click(function(event) {
+        var form =  $(this).closest("form");
+        var name = $(this).data("name");
+        event.preventDefault();
+        swal({
+            title: `Are you sure you want to approve this user?`,
+            text: "If you approve, user can access his account.",
             icon: "warning",
             buttons: true,
             dangerMode: true,

@@ -5,7 +5,13 @@
         <div class="row">
             <div class="Innerdetail">
                 <h2>Arbejdsstress Pro</h2>
-                <p class="mb-5 mt-4">Et livshjul eller et Livs-balance-hjul er et hjul, som består af 8 dele eller områder af dit liv. En del/område, der handler om din 1) Personlige udvikling, 2) din Kærlighed/dit parforhold, 3) din Familie/dine venner, 4) Børn, 5) dit Arbejdsliv, 6) dit Helbred 7) din Fritid, og 8) din Økonomi/velstand. Med livshjulet kan vi måle, hvordan balancen mellem de forskellige dele/områder af dit liv er, og i særdeleshed hvordan balancen er mellem dit arbejdsliv og dit privatliv. Om hvad der fylder meget og hvad der fylder lidt og hvordan det påvirker dit arbejdsliv og dit privatliv.</p>
+                <p class="mb-5 mt-4">Der findes flere måder at teste din egentlige stresstilstand på. Vi benytter en udvidet Perceived Stress Scale (PSS), som undersøger, hvordan du oplever 
+                    din stress, hvordan den påvirker din mentale tilstand og hvordan den påvirker din adfærd og din krop – afspejler sig som psykosomatiske symptomer. 
+                    Derfor indgår der i den test, som vi bruger, også spørgsmål vedrørende din fysiske og psykiske tilstand.
+                     Nedenfor kan du teste din egen tilstand. Du skal svare på spørgsmålene ved at sætte kryds i en af de 5 svarkategorier fra 0 til 4, hvor 0 er lavest og skal 
+                    forstås som ALDRIG, og 4 er højest og skal forstås som KONSTANT. 
+                    Det er vigtigt at gøre opmærksom på, at du IKKE alene ud fra dit testresultat kan konkludere, at du er stresset. Det er nødvendigt, at du også sammen 
+                    med en eksamineret stresscoach får gennemgået dine resultater og I sammen når frem til en endelig konklusion..</p>
                 <a href="{{route('stress-test')}}" class="text-decoration-none btnNext fw-bold">Next</a>
             </div>
         </div>

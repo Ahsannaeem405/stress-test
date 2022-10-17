@@ -54,6 +54,7 @@ Route::get('/contact-us',[HomeController::class,'contact_us_index'])->name('cont
 Route::group(['prefix' => 'admin','middleware' => ['auth','admin']], function(){
     Route::get('/dashboard',[AdminController::class,'dashboard_index'])->name('dashboard');
     Route::get('/users',[AdminController::class,'users_index'])->name('users');
+    Route::get('/users/approve/{id}',[AdminController::class,'approve_user'])->name('aprrove-user');
     Route::get('/edit-user/{id}',[AdminController::class,'edit_users'])->name('edit-user');
     Route::post('/edit-user/{id}',[AdminController::class,'update_user'])->name('update-user');
     Route::get('users/{id}',[AdminController::class, 'delete_user'])->name('delete-user');
