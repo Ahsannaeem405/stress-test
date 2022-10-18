@@ -36,8 +36,8 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value2 m-0 fw-bold" align="center">{{$life->personal}}</p>
-                                    <input type="range" min="0" max="10" value="{{$life->personal}}" class="slider w-100" id="rangeSlider2" disabled/>
+                                    <p class="range-slider__value2 m-0 fw-bold" align="center">{{$life->relationship}}</p>
+                                    <input type="range" min="0" max="10" value="{{$life->relationship}}" class="slider w-100" id="rangeSlider2" disabled/>
                                 </div>
                             </div>
                         </td>
@@ -47,8 +47,8 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value3 m-0 fw-bold" align="center">{{$life->relationship}}</p>
-                                    <input type="range" min="0" max="10" value="{{$life->relationship}}" class="slider w-100" id="rangeSlider3" disabled/>
+                                    <p class="range-slider__value3 m-0 fw-bold" align="center">{{$life->family}}</p>
+                                    <input type="range" min="0" max="10" value="{{$life->family}}" class="slider w-100" id="rangeSlider3" disabled/>
                                 </div>
                             </div>
                         </td>
@@ -58,8 +58,8 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value4 m-0 fw-bold" align="center">{{$life->family}}</p>
-                                    <input type="range" min="0" max="10" value="{{$life->family}}" class="slider w-100" id="rangeSlider4" disabled/>
+                                    <p class="range-slider__value4 m-0 fw-bold" align="center">{{$life->children}}</p>
+                                    <input type="range" min="0" max="10" value="{{$life->children}}" class="slider w-100" id="rangeSlider4" disabled/>
                                 </div>
                             </div>
                         </td>
@@ -69,7 +69,7 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value5 m-0 fw-bold" align="center">{{$life->children}}</p>
+                                    <p class="range-slider__value5 m-0 fw-bold" align="center">{{$life->working}}</p>
                                     <input type="range" min="0" max="10" value="{{$life->working}}" class="slider w-100" id="rangeSlider5" disabled/>
                                 </div>
                             </div>
