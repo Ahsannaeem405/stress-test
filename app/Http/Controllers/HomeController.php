@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\life;
+use App\Models\Life;
 use App\Models\Stress;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -39,7 +39,7 @@ class HomeController extends Controller
 
     public function store_life_test(Request $request)
     {
-        $life = new life();
+        $life = new Life();
         $life->create([
             'user_id' => Auth::user()->id,
             'personal' => $request->personal,
@@ -67,7 +67,7 @@ class HomeController extends Controller
 
     public function life_total_index()
     {
-        $tests = life::where('user_id',Auth::user()->id)->orderBy('id','DESC')->first();
+        $tests = Life::where('user_id',Auth::user()->id)->orderBy('id','DESC')->first();
         return view('life-test.life-total',compact('tests'));
     }
 //---------------------------------------------User life-Test End---------------------------------------------//
@@ -76,14 +76,14 @@ class HomeController extends Controller
 //---------------------------------------------User My-Test Start---------------------------------------------//
     public function my_test_index()
     {
-        $lifes = life::where('user_id',Auth::user()->id)->orderBy('id','DESC')->get();
+        $lifes = Life::where('user_id',Auth::user()->id)->orderBy('id','DESC')->get();
         $stresses = Stress::where('user_id',Auth::user()->id)->orderBy('id','DESC')->get();
         return view('my-tests.my-test',compact('lifes','stresses'));
     }
 
     public function my_life_test_review($id)
     {
-        $life = life::where('id',$id)->first();
+        $life = Life::where('id',$id)->first();
         if($life)
         {
             return view('my-tests.my-life-test-review',compact('life'));
