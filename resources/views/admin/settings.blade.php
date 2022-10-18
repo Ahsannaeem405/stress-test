@@ -49,12 +49,6 @@
                                     Change Password
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link d-flex py-75" id="account-pill-info" data-toggle="pill" href="#account-vertical-info" aria-expanded="false">
-                                    <i class="feather icon-info mr-50 font-medium-3"></i>
-                                    Stripe
-                                </a>
-                            </li>
                         </ul>
                     </div>
                     <!-- right content section -->
@@ -167,7 +161,7 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="tab-pane fade" id="account-vertical-info" role="tabpanel" aria-labelledby="account-pill-info" aria-expanded="false">
+                                        {{-- <div class="tab-pane fade" id="account-vertical-info" role="tabpanel" aria-labelledby="account-pill-info" aria-expanded="false">
                                             <form novalidate>
                                                 <div class="row">
                                                     <div class="col-12">
@@ -325,7 +319,7 @@
                                                     <button type="reset" class="btn btn-outline-warning">Cancel</button>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                 </div>
                             </div>

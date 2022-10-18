@@ -57,10 +57,10 @@ Route::group(['prefix' => 'admin','middleware' => ['auth','admin']], function(){
     Route::get('/users/approve/{id}',[AdminController::class,'approve_user'])->name('aprrove-user');
     Route::get('/edit-user/{id}',[AdminController::class,'edit_users'])->name('edit-user');
     Route::post('/edit-user/{id}',[AdminController::class,'update_user'])->name('update-user');
-    Route::get('users/{id}',[AdminController::class, 'delete_user'])->name('delete-user');
+    Route::get('/users/{id}',[AdminController::class, 'delete_user'])->name('delete-user');
     Route::get('/life-tests',[AdminController::class,'life_tests_index'])->name('life-tests');
     Route::get('/stress-tests',[AdminController::class,'stress_tests_index'])->name('stress-tests');
-    Route::get('stress-test-review/{id}',[AdminController::class,'stress_test_review'])->name('stress-test-review');
+    Route::get('/stress-test-review/{id}',[AdminController::class,'stress_test_review'])->name('stress-test-review');
     Route::get('/stress-tests/{id}',[AdminController::class,'stress_test_delete'])->name('stress-test-delete');
     Route::post('/settings/update_profile/{id}',[AdminController::class,'update_profile'])->name('update-profile');
     Route::post('/settings/update_password/{id}',[AdminController::class,'update_password'])->name('update-password');
