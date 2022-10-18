@@ -4,7 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-class Live extends Model
+
+class Life extends Model
 {
     use HasFactory;
     protected $table = 'lives';

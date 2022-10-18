@@ -39,7 +39,7 @@
             },
             colors:['#3b5998', '#d34836', '#8a3ab9', '#0077B5', '#0084b4', '#bb0000', '#ccc', '#ddd'],
             series: [{
-                name: 'Live Test Marks',
+                name: 'Life Test Marks',
                 data: [
                         ['Personlig udvikling', <?php echo $tests['personal'];?>],
                         ['Parforhold / Kærlighed  ', <?php echo $tests['relationship'];?>],

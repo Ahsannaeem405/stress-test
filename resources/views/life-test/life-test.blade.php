@@ -5,7 +5,7 @@
         <div class="row">
             <h2 class="text-center">Livshjuls Test</h2>
             <p class="text-center mb-5 mt-3">Hvor tilfreds er du med:</p>
-            <form action="{{route('store_live_test')}}" method="POST">
+            <form action="{{route('store_life_test')}}" method="POST">
                 @csrf
                 <table cellspacing="0" cellpadding="0" class="table">
                     <thead>

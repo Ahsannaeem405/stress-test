@@ -24,20 +24,20 @@ Route::get('/logout',[LoginController::class, 'logout'])->name('logout');
 
 
 Route::group(['middleware' => 'auth'],function(){
-//------------------------------------------------Live Test Routes Start------------------------------------------------ //
-Route::get('/live-test-details',[HomeController::class,'live_test_details_index'])->name('live-test-details');
-Route::get('/live-test-review',[HomeController::class,'live_test_review_index'])->name('live-test-review');
-Route::get('/live-test',[HomeController::class,'live_test_index'])->name('live-test');
-Route::post('/live-test', [HomeController::class, 'store_live_test'])->name('store_live_test');
-Route::get('/live-total',[HomeController::class,'live_total_index'])->name('live-total');
-//------------------------------------------------Live Test Routes End------------------------------------------------ //
+//------------------------------------------------life Test Routes Start------------------------------------------------ //
+Route::get('/life-test-details',[HomeController::class,'life_test_details_index'])->name('life-test-details');
+Route::get('/life-test-review',[HomeController::class,'life_test_review_index'])->name('life-test-review');
+Route::get('/life-test',[HomeController::class,'life_test_index'])->name('life-test');
+Route::post('/life-test', [HomeController::class, 'store_life_test'])->name('store_life_test');
+Route::get('/life-total',[HomeController::class,'life_total_index'])->name('life-total');
+//------------------------------------------------life Test Routes End------------------------------------------------ //
 
 
 //------------------------------------------------My Test Routes Start------------------------------------------------ //
 Route::get('/my-test',[HomeController::class,'my_test_index'])->name('my-test');
-Route::get('/my-live-test-review/{id}',[HomeController::class,'my_live_test_review'])->name('my-live-test-review');
+Route::get('/my-life-test-review/{id}',[HomeController::class,'my_life_test_review'])->name('my-life-test-review');
 Route::get('/my-stress-test-review/{id}',[HomeController::class,'my_stress_test_review'])->name('my-stress-test-review');
-//------------------------------------------------Live Test Routes End------------------------------------------------ //
+//------------------------------------------------life Test Routes End------------------------------------------------ //
 
 
 //------------------------------------------------Stress Test Routes Start------------------------------------------------//
@@ -58,14 +58,14 @@ Route::group(['prefix' => 'admin','middleware' => ['auth','admin']], function(){
     Route::get('/edit-user/{id}',[AdminController::class,'edit_users'])->name('edit-user');
     Route::post('/edit-user/{id}',[AdminController::class,'update_user'])->name('update-user');
     Route::get('users/{id}',[AdminController::class, 'delete_user'])->name('delete-user');
-    Route::get('/live-tests',[AdminController::class,'live_tests_index'])->name('live-tests');
+    Route::get('/life-tests',[AdminController::class,'life_tests_index'])->name('life-tests');
     Route::get('/stress-tests',[AdminController::class,'stress_tests_index'])->name('stress-tests');
     Route::get('stress-test-review/{id}',[AdminController::class,'stress_test_review'])->name('stress-test-review');
     Route::get('/stress-tests/{id}',[AdminController::class,'stress_test_delete'])->name('stress-test-delete');
     Route::post('/settings/update_profile/{id}',[AdminController::class,'update_profile'])->name('update-profile');
     Route::post('/settings/update_password/{id}',[AdminController::class,'update_password'])->name('update-password');
-    Route::get('/live-test-review/{id}',[AdminController::class,'live_test_review'])->name('live-test-review');
-    Route::get('/live-tests/{id}',[AdminController::class,'live_test_delete'])->name('live-test-delete');
+    Route::get('/life-test-review/{id}',[AdminController::class,'life_test_review'])->name('life-test-review');
+    Route::get('/life-tests/{id}',[AdminController::class,'life_test_delete'])->name('life-test-delete');
     Route::get('/settings',[AdminController::class,'settings_index'])->name('settings');
 });
 //------------------------------------------------Admin Routes End------------------------------------------------ //

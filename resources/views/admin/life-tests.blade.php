@@ -9,12 +9,12 @@
             <div class="content-header-left col-md-9 col-12 mb-2">
                 <div class="row breadcrumbs-top">
                     <div class="col-12">
-                        <h2 class="content-header-title float-left mb-0">Live Test List</h2>
+                        <h2 class="content-header-title float-left mb-0">life Test List</h2>
                         <div class="breadcrumb-wrapper col-12">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Home</a>
                                 </li>
-                                <li class="breadcrumb-item active">Live Test List
+                                <li class="breadcrumb-item active">life Test List
                                 </li>
                             </ol>
                         </div>
@@ -74,8 +74,8 @@
                                 <td class="product-price">{{$test->role}}</td>
                                 <td class="product-price">{{Carbon\Carbon::parse($test->created_at)->format('d-m-Y')}}</td>
                                 <td class="product-action" style="display: flex;">
-                                    <a href="{{route('live-test-review',$test->id)}}"><span class="action-edit"><i class="feather icon-eye text-success"></i></span></a> &nbsp;&nbsp;
-                                    <form method="POST" action="{{ route('live-test-delete', $test->id) }}">
+                                    <a href="{{route('life-test-review',$test->id)}}"><span class="action-edit"><i class="feather icon-eye text-success"></i></span></a> &nbsp;&nbsp;
+                                    <form method="POST" action="{{ route('life-test-delete', $test->id) }}">
                                         @csrf
                                         <input name="_method" type="hidden" value="GET">
                                         {{-- <span class="action-delete show_confirm"><i class="feather icon-trash text-danger"></i></span> --}}
@@ -122,7 +122,7 @@
                                         <select class="form-control" id="data-status">
                                             <option>Pending</option>
                                             <option>Canceled</option>
-                                            <option>Delivered</option>
+                                            <option>Delifered</option>
                                             <option>On Hold</option>
                                         </select>
                                     </div>

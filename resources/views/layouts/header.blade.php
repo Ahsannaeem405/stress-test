@@ -28,7 +28,7 @@
         <div class="header">
             <div class="container p-0 ">
                 <nav class="navbar navbar-expand-lg navbar-light p-2">
-                    <a class="navbar-brand logo" href="/">
+                    <a class="navbar-brand logo" href="{{route('home')}}">
                         <img src="{{asset('assets/images/arb-logo.png')}}" alt="Logo" height="100" />
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@
                                 <a class="nav-link loginBtn rounded" href="{{route('stress-test')}}">Stress Test</a>
                             </li>
                             <li class="nav-item AdminIcon">
-                                <a class="nav-link loginBtn rounded" href="{{route('live-test')}}">Life Test</a>
+                                <a class="nav-link loginBtn rounded" href="{{route('life-test')}}">Life Test</a>
                             </li>
                             <li class="nav-item AdminIcon">
                                 <a class="nav-link loginBtn rounded" href="{{route('my-test')}}">My Tests</a>

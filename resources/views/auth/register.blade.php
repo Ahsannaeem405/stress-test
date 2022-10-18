@@ -34,7 +34,7 @@
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
                     <label class="form-check-label p-1" for="flexCheckDefault">I agree to the <b>Terms & Conditions</b>.</label>
                 </div>
-                <div><a href="{{route('login')}}" style="color: white; float: right;">Already have account / Login</a></div>
+                <div><a href="{{route('login')}}" style="color: white; float: right;">Already have an account / Login</a></div>
                 <div class="button w-100 text-center"><button type="submit" class="text-decoration-none fw-bold text-white">Register</button></div>
             </form>
         </div>

@@ -14,19 +14,19 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($lives as $live)
+                    @foreach($lifes as $life)
                     <tr>
-                        <td style="text-align: center">Live Test</td>
-                        <td>{{$live->created_at->format('d-m-Y')}}</td>
-                        {{-- <td><input type="date" value="{{$live->created_at->format('Y-m-d')}}" readonly/></td> --}}
-                        <td><a href="{{route('my-live-test-review',$live->id)}}" class="btnNext text-decoration-none fw-bold">Review</a></td>
+                        <td style="text-align: center">life Test</td>
+                        <td>{{$life->created_at->format('d-m-Y')}}</td>
+                        {{-- <td><input type="date" value="{{$life->created_at->format('Y-m-d')}}" readonly/></td> --}}
+                        <td><a href="{{route('my-life-test-review',$life->id)}}" class="btnNext text-decoration-none fw-bold">Review</a></td>
                     </tr>
                     @endforeach
                     @foreach($stresses as $stress)
                     <tr>
                         <td style="text-align: center">Stress Test</td>
                         <td>{{$stress->created_at->format('d-m-Y')}}</td>
-                        {{-- <td><input type="date" value="{{$live->created_at->format('Y-m-d')}}" readonly/></td> --}}
+                        {{-- <td><input type="date" value="{{$life->created_at->format('Y-m-d')}}" readonly/></td> --}}
                         <td><a href="{{route('my-stress-test-review',$stress->id)}}" class="btnNext text-decoration-none fw-bold">Review</a></td>
                     </tr>
                     @endforeach

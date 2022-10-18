@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Live;
+use App\Models\life;
 use App\Models\Stress;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -30,17 +30,17 @@ class HomeController extends Controller
         return view('home');
     }
 
-   //---------------------------------------------User Live-Test Start---------------------------------------------//
+   //---------------------------------------------User life-Test Start---------------------------------------------//
 
-    public function live_test_index()
+    public function life_test_index()
     {
-        return view('live-test.live-test');
+        return view('life-test.life-test');
     }
 
-    public function store_live_test(Request $request)
+    public function store_life_test(Request $request)
     {
-        $live = new Live();
-        $live->create([
+        $life = new life();
+        $life->create([
             'user_id' => Auth::user()->id,
             'personal' => $request->personal,
             'relationship' => $request->relationship,
@@ -52,41 +52,41 @@ class HomeController extends Controller
             'finance' => $request->finance,
         ]);
 
-        return redirect()->route('live-total')->with('success','Live test submitted successfully');
+        return redirect()->route('life-total')->with('success','Life test submitted successfully');
     }
 
-    public function live_test_details_index()
+    public function life_test_details_index()
     {
-        return view('live-test.live-test-details');
+        return view('life-test.life-test-details');
     }
 
-    public function live_test_review_index()
+    public function life_test_review_index()
     {
-        return view('live-test.live-test-review');
+        return view('life-test.life-test-review');
     }
 
-    public function live_total_index()
+    public function life_total_index()
     {
-        $tests = Live::where('user_id',Auth::user()->id)->orderBy('id','DESC')->first();
-        return view('live-test.live-total',compact('tests'));
+        $tests = life::where('user_id',Auth::user()->id)->orderBy('id','DESC')->first();
+        return view('life-test.life-total',compact('tests'));
     }
-//---------------------------------------------User Live-Test End---------------------------------------------//
+//---------------------------------------------User life-Test End---------------------------------------------//
 
 
 //---------------------------------------------User My-Test Start---------------------------------------------//
     public function my_test_index()
     {
-        $lives = Live::where('user_id',Auth::user()->id)->get();
+        $lifes = life::where('user_id',Auth::user()->id)->get();
         $stresses = Stress::where('user_id',Auth::user()->id)->get();
-        return view('my-tests.my-test',compact('lives','stresses'));
+        return view('my-tests.my-test',compact('lifes','stresses'));
     }
 
-    public function my_live_test_review($id)
+    public function my_life_test_review($id)
     {
-        $live = Live::where('id',$id)->first();
-        if($live)
+        $life = life::where('id',$id)->first();
+        if($life)
         {
-            return view('my-tests.my-live-test-review',compact('live'));
+            return view('my-tests.my-life-test-review',compact('life'));
         }
     }
 

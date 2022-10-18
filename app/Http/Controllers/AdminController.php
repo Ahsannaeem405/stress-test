@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Live;
+use App\Models\life;
 use App\Models\Stress;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -15,8 +15,8 @@ class AdminController extends Controller
     public function dashboard_index()
     {
         $stress = Stress::count();
-        $live = Live::count();
-        return view('admin.dashboard',compact('stress','live'));
+        $life = life::count();
+        return view('admin.dashboard',compact('stress','life'));
     }
     //--------------------------------------------- Admin Dashboard End---------------------------------------------//
 
@@ -81,32 +81,32 @@ class AdminController extends Controller
     //--------------------------------------------- Admin Users End---------------------------------------------//
 
 
-    //--------------------------------------------- Admin Live Tests Start---------------------------------------------//
-    public function live_tests_index()
+    //--------------------------------------------- Admin life Tests Start---------------------------------------------//
+    public function life_tests_index()
     {
-        $tests = DB::table('lives')
-        ->leftjoin('users','lives.user_id','=','users.id')
+        $tests = DB::table('lifes')
+        ->leftjoin('users','lifes.user_id','=','users.id')
         ->where('role','user')
         ->get();
-        return view('admin.live-tests',compact('tests'));
+        return view('admin.life-tests',compact('tests'));
     }
 
-    public function live_test_review($id)
+    public function life_test_review($id)
     {
-        $live = Live::where('user_id',$id)->first();
-        return view('admin.live-test-review',compact('live'));
+        $life = life::where('user_id',$id)->first();
+        return view('admin.life-test-review',compact('life'));
     }
 
-    public function live_test_delete($id)
+    public function life_test_delete($id)
     {
-        $user = Live::where('user_id',$id)->first();
+        $user = life::where('user_id',$id)->first();
         if($user)
         {
             $user->delete();
             return back()->with('success','Record Deleted Successfully');
         }
     }
-    //--------------------------------------------- Admin Live Tests End---------------------------------------------//
+    //--------------------------------------------- Admin life Tests End---------------------------------------------//
 
     //--------------------------------------------- Admin Stress Tests Start---------------------------------------------//
     public function stress_tests_index()
@@ -121,10 +121,10 @@ class AdminController extends Controller
 
     public function stress_test_review($id)
     {
-        $live = Stress::select('flexRadioDefault','flexRadioDefault1','flexRadioDefault2','flexRadioDefault3','flexRadioDefault4','flexRadioDefault6','flexRadioDefault7','flexRadioDefault8','flexRadioDefault9','flexRadioDefault10','flexRadioDefault11','flexRadioDefault12','flexRadioDefault13','flexRadioDefault14','flexRadioDefault15','flexRadioDefault16','flexRadioDefault17','flexRadioDefault18','flexRadioDefault19','flexRadioDefault20','flexRadioDefault21','flexRadioDefault22','flexRadioDefault23')
+        $life = Stress::select('flexRadioDefault','flexRadioDefault1','flexRadioDefault2','flexRadioDefault3','flexRadioDefault4','flexRadioDefault6','flexRadioDefault7','flexRadioDefault8','flexRadioDefault9','flexRadioDefault10','flexRadioDefault11','flexRadioDefault12','flexRadioDefault13','flexRadioDefault14','flexRadioDefault15','flexRadioDefault16','flexRadioDefault17','flexRadioDefault18','flexRadioDefault19','flexRadioDefault20','flexRadioDefault21','flexRadioDefault22','flexRadioDefault23')
         ->where('id',$id)->first();
-        // dd($live);
-        $make_array = $live->toArray();
+        // dd($life);
+        $make_array = $life->toArray();
         $check_count = array_count_values($make_array);
         if(isset($check_count[4]))
         {
@@ -168,7 +168,7 @@ class AdminController extends Controller
             $never=0;
         }
         $total = ($constant+$frequently+$sometime+$rarely+$never);
-        return view('admin.stress-test-review',compact('live','constant','frequently','sometime','rarely','never','total'));
+        return view('admin.stress-test-review',compact('life','constant','frequently','sometime','rarely','never','total'));
     }
 
     public function stress_test_delete($id)

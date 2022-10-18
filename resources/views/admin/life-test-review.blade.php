@@ -1,17 +1,31 @@
-@extends('layouts.app')
+@extends('admin.layouts.app')
 @section('content')
-<div class="LiveTotalSec">
-    <div class="container">
-        <div>
-            <div id="pie" style="height: 500px"></div>
+<!-- BEGIN: Content-->
+<div class="app-content content">
+    <div class="content-overlay"></div>
+    <div class="header-navbar-shadow"></div>
+    <div class="content-wrapper">
+        <div class="container">
+            <div>
+                <div id="pie" style="height: 500px;"></div>
+            </div>
         </div>
-    </div>
-</div>
-<div class="StressTestSec">
-    <div class="container">
-        <div class="row">
-            <h2 class="text-center">Livshjuls Test</h2>
-            <p class="text-center mb-5 mt-3">Hvor tilfreds er du med:</p>
+        <div class="content-header row p-2">
+            <div class="content-header-left col-md-9 col-12 mb-2">
+                <div class="row breadcrumbs-top">
+                    <div class="col-12">
+                        <h2 class="content-header-title float-left mb-0">life Test Review</h2>
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Home</a>
+                                </li>
+                                <li class="breadcrumb-item active">life Test Review
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <table cellspacing="0" cellpadding="0" class="table">
                 <thead>
                 <tr>
@@ -25,8 +39,8 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value m-0 fw-bold" align="center">{{$live->personal}}</p>
-                                    <input type="range" min="0" max="10" value="{{$live->personal}}" class="slider w-100" id="rangeSlider" disabled/>
+                                    <p class="range-slider__value m-0 fw-bold" align="center">{{$life->personal}}</p>
+                                    <input type="range" min="0" max="10" value="{{$life->personal}}" class="slider w-100" id="rangeSlider" disabled/>
                                 </div>
                             </div>
                         </td>
@@ -36,8 +50,8 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value2 m-0 fw-bold" align="center">{{$live->personal}}</p>
-                                    <input type="range" min="0" max="10" value="{{$live->personal}}" class="slider w-100" id="rangeSlider2" disabled/>
+                                    <p class="range-slider__value2 m-0 fw-bold" align="center">{{$life->personal}}</p>
+                                    <input type="range" min="0" max="10" value="{{$life->personal}}" class="slider w-100" id="rangeSlider2" disabled/>
                                 </div>
                             </div>
                         </td>
@@ -47,8 +61,8 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value3 m-0 fw-bold" align="center">{{$live->relationship}}</p>
-                                    <input type="range" min="0" max="10" value="{{$live->relationship}}" class="slider w-100" id="rangeSlider3" disabled/>
+                                    <p class="range-slider__value3 m-0 fw-bold" align="center">{{$life->relationship}}</p>
+                                    <input type="range" min="0" max="10" value="{{$life->relationship}}" class="slider w-100" id="rangeSlider3" disabled/>
                                 </div>
                             </div>
                         </td>
@@ -58,8 +72,8 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value4 m-0 fw-bold" align="center">{{$live->family}}</p>
-                                    <input type="range" min="0" max="10" value="{{$live->family}}" class="slider w-100" id="rangeSlider4" disabled/>
+                                    <p class="range-slider__value4 m-0 fw-bold" align="center">{{$life->family}}</p>
+                                    <input type="range" min="0" max="10" value="{{$life->family}}" class="slider w-100" id="rangeSlider4" disabled/>
                                 </div>
                             </div>
                         </td>
@@ -69,8 +83,8 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value5 m-0 fw-bold" align="center">{{$live->children}}</p>
-                                    <input type="range" min="0" max="10" value="{{$live->working}}" class="slider w-100" id="rangeSlider5" disabled/>
+                                    <p class="range-slider__value5 m-0 fw-bold" align="center">{{$life->children}}</p>
+                                    <input type="range" min="0" max="10" value="{{$life->working}}" class="slider w-100" id="rangeSlider5" disabled/>
                                 </div>
                             </div>
                         </td>
@@ -80,8 +94,8 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value6 m-0 fw-bold" align="center">{{$live->health}}</p>
-                                    <input type="range" min="0" max="10" value="{{$live->health}}" class="slider w-100" id="rangeSlider6" disabled/>
+                                    <p class="range-slider__value6 m-0 fw-bold" align="center">{{$life->health}}</p>
+                                    <input type="range" min="0" max="10" value="{{$life->health}}" class="slider w-100" id="rangeSlider6" disabled/>
                                 </div>
                             </div>
                         </td>
@@ -91,8 +105,8 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value7 m-0 fw-bold" align="center">{{$live->leisure}}</p>
-                                    <input type="range" min="0" max="10" value="{{$live->leisure}}" class="slider w-100" id="rangeSlider7" disabled/>
+                                    <p class="range-slider__value7 m-0 fw-bold" align="center">{{$life->leisure}}</p>
+                                    <input type="range" min="0" max="10" value="{{$life->leisure}}" class="slider w-100" id="rangeSlider7" disabled/>
                                 </div>
                             </div>
                         </td>
@@ -102,8 +116,8 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value8 m-0 fw-bold" align="center">{{$live->finance}}</p>
-                                    <input type="range" min="0" max="10" value="{{$live->finance}}" class="slider w-100" id="rangeSlider8" disabled/>
+                                    <p class="range-slider__value8 m-0 fw-bold" align="center">{{$life->finance}}</p>
+                                    <input type="range" min="0" max="10" value="{{$life->finance}}" class="slider w-100" id="rangeSlider8" disabled/>
                                 </div>
                             </div>
                         </td>
@@ -113,6 +127,7 @@
         </div>
     </div>
 </div>
+
 <script>
     // pie chart for stress
     Highcharts.chart('pie', {
@@ -121,7 +136,9 @@
             options3d: {
                 enabled: true,
                 alpha: 45
-            }
+            },
+            backgroundColor: "transparent",
+            
         },
         title: {
             text: '<h1>Livshjulet</h1>'
@@ -144,17 +161,17 @@
         },
         colors:['#3b5998', '#d34836', '#8a3ab9', '#0077B5', '#0084b4', '#bb0000', '#ccc', '#ddd'],
         series: [{
-            name: 'Live Test Marks',
+            name: 'life Test Marks',
             data: [
-                    ['Personlig udvikling', <?php echo $live['personal'];?>],
-                    ['Parforhold / Kærlighed  ', <?php echo $live['relationship'];?>],
-                    ['Venner / Familie', <?php echo $live['family'];?>],
+                    ['Personlig udvikling', <?php echo $life['personal'];?>],
+                    ['Parforhold / Kærlighed  ', <?php echo $life['relationship'];?>],
+                    ['Venner / Familie', <?php echo $life['family'];?>],
                     // {name:'LinkedIn',  y:450, sliced: true,selected: true},
-                    ['Børn', <?php echo $live['children'];?>],
-                    ['Arbejdsliv', <?php echo $live['working'];?>],
-                    ['Helbred ', <?php echo $live['health'];?>],
-                    ['Fritid ', <?php echo $live['leisure'];?>],
-                    ['Økonomi / Velstand', <?php echo $live['finance'];?>],
+                    ['Børn', <?php echo $life['children'];?>],
+                    ['Arbejdsliv', <?php echo $life['working'];?>],
+                    ['Helbred ', <?php echo $life['health'];?>],
+                    ['Fritid ', <?php echo $life['leisure'];?>],
+                    ['Økonomi / Velstand', <?php echo $life['finance'];?>],
             ]
         }],
         // tooltip:{
