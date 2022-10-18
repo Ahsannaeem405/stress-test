@@ -56,8 +56,8 @@
                             <th></th>
                             <th>NAME</th>
                             <th>Email</th>
-                            <th>Role</th>
-                            <th>Date</th>
+                            <th>ROLE</th>
+                            <th>DATE</th>
                             <th>ACTION</th>
                         </tr>
                         </thead>

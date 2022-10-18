@@ -46,7 +46,7 @@ class AdminController extends Controller
                 $user->name = $request->name;
                 $user->email = $request->email;
                 $user->save();
-                return redirect()->route('users')->with('success','User Updated Successfully');
+                return redirect()->route('users')->with('success','Bruger opdateret med succes');
             }
         }
     }
@@ -57,7 +57,7 @@ class AdminController extends Controller
         if($user)
         {
             $user->delete();
-            return back()->with('success', 'User Deleted Successfully');
+            return back()->with('success', 'Brugeren blev slettet');
         }
     }
 
@@ -71,11 +71,11 @@ class AdminController extends Controller
                 $user->status=1;
                 $user->save();
             }
-            return back()->with('success','User Approved Successfully');
+            return back()->with('success','Bruger godkendt');
         }
         else
         {
-            return back()->with('error','Something went wrong please try later !');
+            return back()->with('error','Noget gik galt, prøv venligst senere !');
         }
     }
     //--------------------------------------------- Admin Users End---------------------------------------------//
@@ -100,7 +100,7 @@ class AdminController extends Controller
         if($user)
         {
             $user->delete();
-            return back()->with('success','Record Deleted Successfully');
+            return back()->with('success','Optagelsen blev slettet');
         }
     }
     //--------------------------------------------- Admin life Tests End---------------------------------------------//
@@ -170,7 +170,7 @@ class AdminController extends Controller
         if($user)
         {
             $user->delete();
-            return back()->with('success','Record Deleted Successfully');
+            return back()->with('success','Optagelsen blev slettet');
         }
     }
     //--------------------------------------------- Admin Stress Tests End---------------------------------------------//
@@ -201,7 +201,7 @@ class AdminController extends Controller
             $profile->email = $request->email;
             // Common Fields End //
             $profile->save();
-            return back()->with('success','Profile has been Updated');
+            return back()->with('success','Profilen er blevet opdateret');
         }
     }
     public function update_password(Request $request)
@@ -213,21 +213,21 @@ class AdminController extends Controller
         // ]);
         if(empty($request->old_password) || empty($request->new_password))
         {
-            return back()->with("error", "Old Password and New Password fields are Required");
+            return back()->with("error", "Felterne Gammel adgangskode og Ny adgangskode er påkrævet");
         }
         if($request->new_password != $request->new_password_confirmation)
         {
-            return back()->with("error", "New Password Doesn't match with Confirm Password");
+            return back()->with("error", "Ny adgangskode stemmer ikke overens med Bekræft adgangskode");
         }
         #Match The Old Password
         if(!Hash::check($request->old_password, auth()->user()->password)){
-            return back()->with("error", "Old Password Doesn't match!");
+            return back()->with("error", "Gammel adgangskode stemmer ikke overens!");
         }
         #Update the new Password
         User::whereId(auth()->user()->id)->update([
             'password' => Hash::make($request->new_password)
         ]);
-        return back()->with("success", "Password changed successfully!");
+        return back()->with("success", "Adgangskoden blev ændret!");
     }
     //--------------------------------------------- Admin Settings End---------------------------------------------//
 }

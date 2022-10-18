@@ -170,10 +170,9 @@ nav .logo{
     border-radius: 10px;
     /* color: #474f59; */
     color: white;
-    float: right;
+    /* float: right; */
     font-size: 20px;
     border: 1px solid #dee2e6;
-    /* float: right; */
 }
 .StressTestSec .table tr .btnNext:hover{
     /* background-color: #f7f7f7; */

@@ -104,7 +104,7 @@
                             </td>
                         </tr>
                         <tr class="list-item position-relative bg-white">
-                            <td class="SubmitBtn" colspan="3"><button type="submit" class="btnNext text-decoration-none fw-bold">Submit</button></td>
+                            <td class="SubmitBtn" colspan="3"><button type="submit" class="btnNext text-decoration-none fw-bold" style="float: right;">Submit</button></td>
                         </tr>
                     </tbody>
                 </table>

@@ -52,7 +52,7 @@ class HomeController extends Controller
             'finance' => $request->finance,
         ]);
 
-        return redirect()->route('life-total')->with('success','Life test submitted successfully');
+        return redirect()->route('life-total')->with('success','Livstesten blev indsendt');
     }
 
     public function life_test_details_index()
@@ -180,7 +180,7 @@ class HomeController extends Controller
             'flexRadioDefault22' => $request->flexRadioDefault22,
             'flexRadioDefault23' => $request->flexRadioDefault23,
         ]);
-        return redirect()->route('stress-total')->with('success','Stress test submitted successfully');
+        return redirect()->route('stress-total')->with('success','Stresstest indsendt med succes');
     }
 
     public function stress_test_details_index()
