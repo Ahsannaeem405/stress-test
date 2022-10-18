@@ -186,7 +186,7 @@
                 <li class=" nav-item"><a href="{{route('dashboard')}}"><i class="feather icon-monitor"></i><span class="menu-title" data-i18n="Profile">Dashboard</span></a></li>
                 <li class=" nav-item"><a href="{{route('users')}}"><i class="feather icon-user"></i><span class="menu-title" data-i18n="Account Settings">Users</span></a></li>
                 <li class=" nav-item"><a href="{{route('stress-tests')}}"><i class="feather icon-help-circle"></i><span class="menu-title" data-i18n="FAQ">Stress Test</span></a></li>
-                <li class=" nav-item"><a href="{{route('live-tests')}}"><i class="feather icon-help-circle"></i><span class="menu-title" data-i18n="FAQ">Live Test</span></a></li>
+                <li class=" nav-item"><a href="{{route('life-tests')}}"><i class="feather icon-help-circle"></i><span class="menu-title" data-i18n="FAQ">life Test</span></a></li>
                 <li class=" nav-item"><a href="{{route('settings')}}"><i class="feather icon-settings"></i><span class="menu-title" data-i18n="Search">Settings</span></a></li>
                 <!--<li class=" nav-item"><a href="page-invoice.html"><i class="feather icon-file"></i><span class="menu-title" data-i18n="Invoice">Invoice</span></a></li>-->
             </ul>
