@@ -7,7 +7,7 @@
             <form action="{{route('login')}}" method="POST">
                 @csrf
                 <h2 class="text-center mb-5 fw-bold">Login</h2>
-                <label class="mb-2">E-MAIL</label>
+                <label class="mb-2">E-mail</label>
                 <input type="email" name="email" placeholder="Enter email" class="form-control @error('email') is-invalid @enderror" value="{{old('email')}}" required autocomplete="email" autofocus />
                 @error('email')
                 <span class="invalid-feedback" role="alert">

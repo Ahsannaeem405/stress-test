@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\life;
+use App\Models\Life;
 use App\Models\Stress;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -15,7 +15,7 @@ class AdminController extends Controller
     public function dashboard_index()
     {
         $stress = Stress::count();
-        $life = life::count();
+        $life = Life::count();
         return view('admin.dashboard',compact('stress','life'));
     }
     //--------------------------------------------- Admin Dashboard End---------------------------------------------//
@@ -93,7 +93,7 @@ class AdminController extends Controller
 
     public function life_test_review($id)
     {
-        $life = life::where('user_id',$id)->first();
+        $life = Life::where('user_id',$id)->first();
         return view('admin.life-test-review',compact('life'));
     }
 

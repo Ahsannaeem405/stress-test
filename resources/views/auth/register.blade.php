@@ -14,7 +14,7 @@
                     <strong>{{ $message }}</strong>
                 </span>
                 @enderror
-                <label class="mb-2">E-MAIL</label>
+                <label class="mb-2">E-mail</label>
                 <input type="email" name="email" placeholder="Enter email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}"  autocomplete="email" />
                 @error('email')
                 <span class="invalid-feedback" role="alert">
