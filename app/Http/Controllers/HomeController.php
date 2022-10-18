@@ -76,8 +76,8 @@ class HomeController extends Controller
 //---------------------------------------------User My-Test Start---------------------------------------------//
     public function my_test_index()
     {
-        $lifes = life::where('user_id',Auth::user()->id)->get();
-        $stresses = Stress::where('user_id',Auth::user()->id)->get();
+        $lifes = life::where('user_id',Auth::user()->id)->orderBy('id','DESC')->get();
+        $stresses = Stress::where('user_id',Auth::user()->id)->orderBy('id','DESC')->get();
         return view('my-tests.my-test',compact('lifes','stresses'));
     }
 
