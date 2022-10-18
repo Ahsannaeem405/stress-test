@@ -54,7 +54,7 @@
                                         <i class="feather icon-file-text text-warning font-medium-5"></i>
                                     </div>
                                 </div>
-                                <h2 class="text-bold-700 mt-1 mb-25">{{$live}}</h2>
+                                <h2 class="text-bold-700 mt-1 mb-25">{{$life}}</h2>
                                 <p class="mb-0">Total Life Test</p>
                             </div>
                             <div class="card-content">
