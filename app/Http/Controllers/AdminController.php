@@ -24,7 +24,7 @@ class AdminController extends Controller
     //---------------------------------------------Admin Users Start---------------------------------------------//
     public function users_index()
     {
-        $users = User::where('role','user')->get();
+        $users = User::where('role','user')->orderBy('id','DESC')->get();
         return view('admin.users',compact('users'));
     }
 
