@@ -62,11 +62,11 @@
                         </tr>
                         </thead>
                         <tbody>
-                            @foreach($tests as $test)
+                            @foreach($stress_tests as $test)
                             <tr>
                                 <td></td>
-                                <td class="product-name">{{$test->name}}</td>
-                                <td class="product-category">{{$test->email}}</td>
+                                <td class="product-name">{{$test->get_stress_test_users->name}} </td>
+                                <td class="product-category">{{$test->get_stress_test_users->email}}</td>
                                 {{-- <td>
                                     <div class="progress progress-bar-success">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:97%"></div>
@@ -79,11 +79,11 @@
                                         </div>
                                     </div>
                                 </td> --}}
-                                <td class="product-price">{{$test->role}}</td>
+                                <td class="product-price">{{$test->get_stress_test_users->role}}</td>
                                 <td class="product-price">{{Carbon\Carbon::parse($test->created_at)->format('d-m-Y')}}</td>
                                 <td class="product-action" style="display: flex;">
-                                    <a href="{{ url('admin/stress-test-review',$test->id) }}"><span class="action-edit"><i class="feather icon-eye text-success"></i></span></a> &nbsp;&nbsp;
-                                    <form method="POST" action="{{ route('stress-test-delete', $test->id) }}">
+                                    <a href="{{ url('admin/stress-test-review',$test->id)}}"><span class="action-edit"><i class="feather icon-eye text-success"></i></span></a> &nbsp;&nbsp;
+                                    <form method="POST" action="{{ url('sadmin/tress-test-delete',$test->id)}}">
                                         @csrf
                                         <input name="_method" type="hidden" value="GET">
                                         {{-- <span class="action-delete show_confirm"><i class="feather icon-trash text-danger"></i></span> --}}

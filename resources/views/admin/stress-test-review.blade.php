@@ -34,12 +34,12 @@
             <div class="content-header-left col-md-9 col-12 mb-2">
                 <div class="row breadcrumbs-top">
                     <div class="col-12">
-                        <h2 class="content-header-title float-left mb-0">Live Test List</h2>
+                        <h2 class="content-header-title float-left mb-0">life Test List</h2>
                         <div class="breadcrumb-wrapper col-12">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Home</a>
                                 </li>
-                                <li class="breadcrumb-item active">Live Test List
+                                <li class="breadcrumb-item active">Life Test List
                                 </li>
                             </ol>
                         </div>
@@ -61,187 +61,187 @@
             <tbody>
                 <tr>
                     <td>Været træt og uoplagt?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" {{($live->flexRadioDefault=="4")? "checked" : "disabled"}} ></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" {{($live->flexRadioDefault=="3")? "checked" : "disabled"}} ></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" {{($live->flexRadioDefault=="2")? "checked" : "disabled"}} ></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" {{($live->flexRadioDefault=="1")? "checked" : "disabled"}} ></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" {{($live->flexRadioDefault=="0")? "checked" : "disabled"}} ></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" {{($life->flexRadioDefault=="4")? "checked" : "disabled"}} ></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" {{($life->flexRadioDefault=="3")? "checked" : "disabled"}} ></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" {{($life->flexRadioDefault=="2")? "checked" : "disabled"}} ></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" {{($life->flexRadioDefault=="1")? "checked" : "disabled"}} ></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" {{($life->flexRadioDefault=="0")? "checked" : "disabled"}} ></td>
                 </tr>
                 <tr>
                     <td>Været anspændt?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault11" {{($live->flexRadioDefault1=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault22" {{($live->flexRadioDefault1=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault5" {{($live->flexRadioDefault1=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault6" {{($live->flexRadioDefault1=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault7" {{($live->flexRadioDefault1=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault11" {{($life->flexRadioDefault1=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault22" {{($life->flexRadioDefault1=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault5" {{($life->flexRadioDefault1=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault6" {{($life->flexRadioDefault1=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault7" {{($life->flexRadioDefault1=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Været irritabel og oplevet en indre modstand/modvilje?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1" {{($live->flexRadioDefault2=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" {{($live->flexRadioDefault2=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1" {{($live->flexRadioDefault2=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" {{($live->flexRadioDefault2=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1" {{($live->flexRadioDefault2=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1" {{($life->flexRadioDefault2=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" {{($life->flexRadioDefault2=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1" {{($life->flexRadioDefault2=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" {{($life->flexRadioDefault2=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1" {{($life->flexRadioDefault2=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Haft problemer med at slappe af?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1" {{($live->flexRadioDefault3=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault2" {{($live->flexRadioDefault3=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1" {{($live->flexRadioDefault3=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault2" {{($live->flexRadioDefault3=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1" {{($live->flexRadioDefault3=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1" {{($life->flexRadioDefault3=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault2" {{($life->flexRadioDefault3=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1" {{($life->flexRadioDefault3=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault2" {{($life->flexRadioDefault3=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1" {{($life->flexRadioDefault3=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Oplevet, at du har flere bekymringer og hele tiden tænker på problemer, selvom du har fri og skal slappe af?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1" {{($live->flexRadioDefault4=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2" {{($live->flexRadioDefault4=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1" {{($live->flexRadioDefault4=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2" {{($live->flexRadioDefault4=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1" {{($live->flexRadioDefault4=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1" {{($life->flexRadioDefault4=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2" {{($life->flexRadioDefault4=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1" {{($life->flexRadioDefault4=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2" {{($life->flexRadioDefault4=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1" {{($life->flexRadioDefault4=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Haft besvær med at koncentrere dig?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault1" {{($live->flexRadioDefault6=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault2" {{($live->flexRadioDefault6=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault1" {{($live->flexRadioDefault6=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault2" {{($live->flexRadioDefault6=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault1" {{($live->flexRadioDefault6=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault1" {{($life->flexRadioDefault6=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault2" {{($life->flexRadioDefault6=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault1" {{($life->flexRadioDefault6=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault2" {{($life->flexRadioDefault6=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault1" {{($life->flexRadioDefault6=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Glemt noget, nøgler, en aftale eller et møde?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault1" {{($live->flexRadioDefault7=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault2" {{($live->flexRadioDefault7=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault1" {{($live->flexRadioDefault7=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault2" {{($live->flexRadioDefault7=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault1" {{($live->flexRadioDefault7=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault1" {{($life->flexRadioDefault7=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault2" {{($life->flexRadioDefault7=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault1" {{($life->flexRadioDefault7=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault2" {{($life->flexRadioDefault7=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault1" {{($life->flexRadioDefault7=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Haft svært ved at vælge og træffe en beslutning?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault1" {{($live->flexRadioDefault8=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault2" {{($live->flexRadioDefault8=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault1" {{($live->flexRadioDefault8=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault2" {{($live->flexRadioDefault8=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault1" {{($live->flexRadioDefault8=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault1" {{($life->flexRadioDefault8=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault2" {{($life->flexRadioDefault8=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault1" {{($life->flexRadioDefault8=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault2" {{($life->flexRadioDefault8=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault1" {{($life->flexRadioDefault8=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Oplevet ikke at føle dig i kontrol?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault1" {{($live->flexRadioDefault9=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault2" {{($live->flexRadioDefault9=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault1" {{($live->flexRadioDefault9=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault2" {{($live->flexRadioDefault9=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault1" {{($live->flexRadioDefault9=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault1" {{($life->flexRadioDefault9=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault2" {{($life->flexRadioDefault9=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault1" {{($life->flexRadioDefault9=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault2" {{($life->flexRadioDefault9=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault1" {{($life->flexRadioDefault9=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Oplevet ikke at have overskud til at gøre det, du godt vil gøre?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault1" {{($live->flexRadioDefault10=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault2" {{($live->flexRadioDefault10=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault1" {{($live->flexRadioDefault10=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault2" {{($live->flexRadioDefault10=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault1" {{($live->flexRadioDefault10=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault1" {{($life->flexRadioDefault10=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault2" {{($life->flexRadioDefault10=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault1" {{($life->flexRadioDefault10=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault2" {{($life->flexRadioDefault10=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault1" {{($life->flexRadioDefault10=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Følt dig trist til mode?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault1" {{($live->flexRadioDefaul11=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault2" {{($live->flexRadioDefault11=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault1" {{($live->flexRadioDefault11=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault2" {{($live->flexRadioDefault11=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault1" {{($live->flexRadioDefault11=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault1" {{($life->flexRadioDefault11=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault2" {{($life->flexRadioDefault11=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault1" {{($life->flexRadioDefault11=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault2" {{($life->flexRadioDefault11=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault1" {{($life->flexRadioDefault11=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Følt dig i presset?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault1" {{($live->flexRadioDefault12=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault2" {{($live->flexRadioDefault12=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault1" {{($live->flexRadioDefault12=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault2" {{($live->flexRadioDefault12=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault1" {{($live->flexRadioDefault12=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault1" {{($life->flexRadioDefault12=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault2" {{($life->flexRadioDefault12=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault1" {{($life->flexRadioDefault12=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault2" {{($life->flexRadioDefault12=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault1" {{($life->flexRadioDefault12=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Haft manglende interesse for de ting,  du foretager dig på arbejdet/ i dagligdagen?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault1" {{($live->flexRadioDefault13=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault2" {{($live->flexRadioDefault13=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault1" {{($live->flexRadioDefault13=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault2" {{($live->flexRadioDefault13=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault1" {{($live->flexRadioDefault13=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault1" {{($life->flexRadioDefault13=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault2" {{($life->flexRadioDefault13=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault1" {{($life->flexRadioDefault13=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault2" {{($life->flexRadioDefault13=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault1" {{($life->flexRadioDefault13=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Haft en følelse af, at der er alt for meget, du skal nå på dit arbejde og i din hverdag?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault1" {{($live->flexRadioDefault14=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault2" {{($live->flexRadioDefault14=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault1" {{($live->flexRadioDefault14=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault2" {{($live->flexRadioDefault14=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault1" {{($live->flexRadioDefault14=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault1" {{($life->flexRadioDefault14=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault2" {{($life->flexRadioDefault14=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault1" {{($life->flexRadioDefault14=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault2" {{($life->flexRadioDefault14=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault1" {{($life->flexRadioDefault14=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Indtaget mere alkohol og kaffe, te eller medicin end sædvanlig?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault1" {{($live->flexRadioDefault15=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault2" {{($live->flexRadioDefault15=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault1" {{($live->flexRadioDefault15=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault2" {{($live->flexRadioDefault15=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault1" {{($live->flexRadioDefault15=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault1" {{($life->flexRadioDefault15=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault2" {{($life->flexRadioDefault15=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault1" {{($life->flexRadioDefault15=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault2" {{($life->flexRadioDefault15=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault1" {{($life->flexRadioDefault15=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>En uro i kroppen?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault16" id="flexRadioDefault1" {{($live->flexRadioDefault16=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault16" id="flexRadioDefault2" {{($live->flexRadioDefault16=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault16" id="flexRadioDefault1" {{($live->flexRadioDefault16=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault16" id="flexRadioDefault2" {{($live->flexRadioDefault16=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault16" id="flexRadioDefault1" {{($live->flexRadioDefault16=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault16" id="flexRadioDefault1" {{($life->flexRadioDefault16=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault16" id="flexRadioDefault2" {{($life->flexRadioDefault16=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault16" id="flexRadioDefault1" {{($life->flexRadioDefault16=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault16" id="flexRadioDefault2" {{($life->flexRadioDefault16=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault16" id="flexRadioDefault1" {{($life->flexRadioDefault16=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Uforklarlige smerter i kroppen</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault17" id="flexRadioDefault1" {{($live->flexRadioDefault17=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault17" id="flexRadioDefault2" {{($live->flexRadioDefault17=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault17" id="flexRadioDefault1" {{($live->flexRadioDefault17=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault17" id="flexRadioDefault2" {{($live->flexRadioDefault17=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault17" id="flexRadioDefault1" {{($live->flexRadioDefault17=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault17" id="flexRadioDefault1" {{($life->flexRadioDefault17=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault17" id="flexRadioDefault2" {{($life->flexRadioDefault17=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault17" id="flexRadioDefault1" {{($life->flexRadioDefault17=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault17" id="flexRadioDefault2" {{($life->flexRadioDefault17=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault17" id="flexRadioDefault1" {{($life->flexRadioDefault17=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Haft ondt i eller knugende fornemmelse i maven?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault18" id="flexRadioDefault1" {{($live->flexRadioDefault18=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault18" id="flexRadioDefault2" {{($live->flexRadioDefault18=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault18" id="flexRadioDefault1" {{($live->flexRadioDefault18=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault18" id="flexRadioDefault2" {{($live->flexRadioDefault18=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault18" id="flexRadioDefault1" {{($live->flexRadioDefault18=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault18" id="flexRadioDefault1" {{($life->flexRadioDefault18=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault18" id="flexRadioDefault2" {{($life->flexRadioDefault18=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault18" id="flexRadioDefault1" {{($life->flexRadioDefault18=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault18" id="flexRadioDefault2" {{($life->flexRadioDefault18=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault18" id="flexRadioDefault1" {{($life->flexRadioDefault18=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Haft fordøjelsesproblemer,  diarré eller forstoppelse?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault19" id="flexRadioDefault1" {{($live->flexRadioDefault19=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault19" id="flexRadioDefault2" {{($live->flexRadioDefault19=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault19" id="flexRadioDefault1" {{($live->flexRadioDefault19=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault19" id="flexRadioDefault2" {{($live->flexRadioDefault19=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault19" id="flexRadioDefault1" {{($live->flexRadioDefault19=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault19" id="flexRadioDefault1" {{($life->flexRadioDefault19=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault19" id="flexRadioDefault2" {{($life->flexRadioDefault19=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault19" id="flexRadioDefault1" {{($life->flexRadioDefault19=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault19" id="flexRadioDefault2" {{($life->flexRadioDefault19=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault19" id="flexRadioDefault1" {{($life->flexRadioDefault19=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Haft   midlertidig hjertebanken?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault20" id="flexRadioDefault1" {{($live->flexRadioDefault20=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault20" id="flexRadioDefault2" {{($live->flexRadioDefault20=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault20" id="flexRadioDefault1" {{($live->flexRadioDefault20=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault20" id="flexRadioDefault2" {{($live->flexRadioDefault20=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault20" id="flexRadioDefault1" {{($live->flexRadioDefault20=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault20" id="flexRadioDefault1" {{($life->flexRadioDefault20=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault20" id="flexRadioDefault2" {{($life->flexRadioDefault20=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault20" id="flexRadioDefault1" {{($life->flexRadioDefault20=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault20" id="flexRadioDefault2" {{($life->flexRadioDefault20=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault20" id="flexRadioDefault1" {{($life->flexRadioDefault20=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Haft hovedpine?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault1" {{($live->flexRadioDefault21=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault2" {{($live->flexRadioDefault21=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault1" {{($live->flexRadioDefault21=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault2" {{($live->flexRadioDefault21=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault1" {{($live->flexRadioDefault21=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault1" {{($life->flexRadioDefault21=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault2" {{($life->flexRadioDefault21=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault1" {{($life->flexRadioDefault21=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault2" {{($life->flexRadioDefault21=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault1" {{($life->flexRadioDefault21=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Haft udslæt eller eksem?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault1" {{($live->flexRadioDefault22=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault2" {{($live->flexRadioDefault22=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault1" {{($live->flexRadioDefault22=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault2" {{($live->flexRadioDefault22=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault1" {{($live->flexRadioDefault22=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault1" {{($life->flexRadioDefault22=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault2" {{($life->flexRadioDefault22=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault1" {{($life->flexRadioDefault22=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault2" {{($life->flexRadioDefault22=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault1" {{($life->flexRadioDefault22=="0")? "checked" : "disabled"}}></td>
                 </tr>
                 <tr>
                     <td>Sovet dårligt og vågner mange gange i løbet af natten?</td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault1" {{($live->flexRadioDefault23=="4")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault2" {{($live->flexRadioDefault23=="3")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault1" {{($live->flexRadioDefault23=="2")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault2" {{($live->flexRadioDefault23=="1")? "checked" : "disabled"}}></td>
-                    <td><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault1" {{($live->flexRadioDefault23=="0")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault1" {{($life->flexRadioDefault23=="4")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault2" {{($life->flexRadioDefault23=="3")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault1" {{($life->flexRadioDefault23=="2")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault2" {{($life->flexRadioDefault23=="1")? "checked" : "disabled"}}></td>
+                    <td><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault1" {{($life->flexRadioDefault23=="0")? "checked" : "disabled"}}></td>
                 </tr>
             </tbody>
         </table>

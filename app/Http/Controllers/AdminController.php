@@ -84,22 +84,19 @@ class AdminController extends Controller
     //--------------------------------------------- Admin life Tests Start---------------------------------------------//
     public function life_tests_index()
     {
-        $tests = DB::table('lifes')
-        ->leftjoin('users','lifes.user_id','=','users.id')
-        ->where('role','user')
-        ->get();
-        return view('admin.life-tests',compact('tests'));
+        $life_tests = Life::all();
+        return view('admin.life-tests',compact('life_tests'));
     }
 
     public function life_test_review($id)
     {
-        $life = Life::where('user_id',$id)->first();
+        $life = Life::where('id',$id)->first();
         return view('admin.life-test-review',compact('life'));
     }
 
     public function life_test_delete($id)
     {
-        $user = life::where('user_id',$id)->first();
+        $user = life::where('id',$id)->first();
         if($user)
         {
             $user->delete();
@@ -111,12 +108,8 @@ class AdminController extends Controller
     //--------------------------------------------- Admin Stress Tests Start---------------------------------------------//
     public function stress_tests_index()
     {
-        $tests = DB::table('users')
-        ->where('role','user')
-        ->leftJoin('stress','users.id','=','stress.user_id')
-        ->get();
-        // dd($tests);
-        return view('admin.stress-tests',compact('tests'));
+        $stress_tests = stress::all();
+        return view('admin.stress-tests',compact('stress_tests'));
     }
 
     public function stress_test_review($id)

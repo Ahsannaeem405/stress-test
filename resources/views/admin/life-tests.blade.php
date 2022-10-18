@@ -54,11 +54,11 @@
                         </tr>
                         </thead>
                         <tbody>
-                            @foreach($tests as $test)
+                            @foreach($life_tests as $test)
                             <tr>
                                 <td></td>
-                                <td class="product-name">{{$test->name}}</td>
-                                <td class="product-category">{{$test->email}}</td>
+                                <td class="product-name">{{$test->get_life_test->name}}</td>
+                                <td class="product-category">{{$test->get_life_test->email}}</td>
                                 {{-- <td>
                                     <div class="progress progress-bar-success">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:97%"></div>
@@ -71,7 +71,7 @@
                                         </div>
                                     </div>
                                 </td> --}}
-                                <td class="product-price">{{$test->role}}</td>
+                                <td class="product-price">{{$test->get_life_test->role}}</td>
                                 <td class="product-price">{{Carbon\Carbon::parse($test->created_at)->format('d-m-Y')}}</td>
                                 <td class="product-action" style="display: flex;">
                                     <a href="{{route('life-test-review',$test->id)}}"><span class="action-edit"><i class="feather icon-eye text-success"></i></span></a> &nbsp;&nbsp;
