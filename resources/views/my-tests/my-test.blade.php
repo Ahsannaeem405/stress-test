@@ -8,10 +8,10 @@
                 <p class="text-center mb-5 mt-3">Hvor tilfreds er du med:</p>
                 <table cellspacing="0" cellpadding="0" class="table">
                     <thead>
-                        <tr>
-                            <th>NAME</th>
+                        <tr style="text-align: center;">
+                            <th style="border-radius: 20px 0px 0px 0px;">NAME</th>
                             <th>DATE</th>
-                            <th>ACTION</th>
+                            <th style="border-radius: 0px 20px 0px 0px;">ACTION</th>
                         </tr>
                     </thead>
                     <tbody>

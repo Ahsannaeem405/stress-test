@@ -22,7 +22,7 @@
                 </span>
                 @enderror
                 <div><a href="{{route('register')}}" style="color: white; float: right;">Don't have an account! Registered here</a></div>
-                <div class="button w-100 text-center"><button type="submit" type="submit" class="text-decoration-none fw-bold text-white">Login</button></div>
+                <div class="button w-100 text-center"><button type="submit" type="submit" class="text-decoration-none fw-bold">Login</button></div>
             </form>
             
         </div>

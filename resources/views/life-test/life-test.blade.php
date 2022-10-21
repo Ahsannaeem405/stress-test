@@ -7,11 +7,11 @@
             <p class="text-center mb-5 mt-3">Hvor tilfreds er du med:</p>
             <form action="{{route('store_life_test')}}" method="POST">
                 @csrf
-                <table cellspacing="0" cellpadding="0" class="table">
+                <table cellspacing="0" cellpadding="0" class="table table22">
                     <thead>
                     <tr>
-                        <th></th>
-                        <th></th>
+                        <th style="border-radius: 12px 0px 0px 0px;"></th>
+                        <th style="border-radius: 0px 12px 0px 0px;"></th>
                     </tr>
                     </thead>
                     <tbody>

@@ -38,10 +38,10 @@
                         <ul class="navbar-nav">
                             @if(!Auth::user())
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('register')}}">Register</a>
+                                <a class="nav-link" href="{{route('register')}}">Tilmeld</a>
                             </li>
                             <li class="nav-item AdminIcon">
-                                <a class="nav-link loginBtn rounded" href="{{route('login')}}">Login</a>
+                                <a class="nav-link loginBtn rounded" href="{{route('login')}}">Log på</a>
                             </li>
                             @endif
                             @if(Auth::user())
