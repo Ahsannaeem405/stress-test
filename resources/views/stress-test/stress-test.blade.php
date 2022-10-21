@@ -25,127 +25,127 @@
                         <div class="tab name">
                             <ul class="list-inline">
                                 <li class="list-inline-item">Været træt og uoplagt?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="0"></li>
                             </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">Været anspændt?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault11" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault22"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault5"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault6"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault7"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault11" value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault22" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault5" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault6" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault7" value="0"></li>
                             </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">Været irritabel og oplevet en indre modstand/modvilje?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1" value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1" value="0"></li>
                             </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">Haft problemer med at slappe af?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault2" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault2" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1" value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1" value="0"></li>
                             </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">Oplevet, at du har flere bekymringer og hele tiden tænker på problemer, selvom du har fri og skal slappe af?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1" value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1" value="0"></li>
                             </ul>
                         </div>
                         <div class="tab contact">
                             <ul class="list-inline">
                                 <li class="list-inline-item">Haft besvær med at koncentrere dig?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault1" value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault1" value="0"></li>
                             </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">Glemt noget, nøgler, en aftale eller et møde?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault1"  value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault1" value="0"></li>
                             </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">Haft svært ved at vælge og træffe en beslutning?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault1"  value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault1" value="0"></li>
                             </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">Oplevet ikke at føle dig i kontrol?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault1" value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault1" value="0"></li>
                             </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">Oplevet ikke at have overskud til at gøre det, du godt vil gøre?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault1" value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault1" value="0"></li>
                             </ul>
                         </div>
                         <div class="tab dob">
                             <ul class="list-inline">
                                 <li class="list-inline-item">Følt dig trist til mode?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault1" value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault1" value="0"></li>
                             </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">Følt dig i presset?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault1"  value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault1" value="0"></li>
                             </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">Haft manglende interesse for de ting,  du foretager dig på arbejdet/ i dagligdagen?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault1" value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault13" id="flexRadioDefault1" value="0"></li>
                             </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">Haft en følelse af, at der er alt for meget, du skal nå på dit arbejde og i din hverdag?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault1" value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault14" id="flexRadioDefault1" value="0"></li>
                             </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">Indtaget mere alkohol og kaffe, te eller medicin end sædvanlig?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault1" value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault15" id="flexRadioDefault1" value="0"></li>
                             </ul>
                         </div>
                         <div class="tab missed">
@@ -193,35 +193,35 @@
                         <div class="tab login">
                             <ul class="list-inline">
                                 <li class="list-inline-item">Haft hovedpine?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault1" value="4" ></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault2" value="3" ></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault1" value="2" ></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault2" value="1" ></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault21" id="flexRadioDefault1" value="0" ></li>
                             </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">Haft udslæt eller eksem?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault1" value="4" ></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault22" id="flexRadioDefault1" value="0"></li>
                             </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">Sovet dårligt og vågner mange gange i løbet af natten?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault1" value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault23" id="flexRadioDefault1" value="0"></li>
                             </ul>
                             <ul class="list-inline">
                                 <li class="list-inline-item">Ændret dine spisevaner og spist mere usundt?</li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault1" ></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault1"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault2"></li>
-                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault1" value="4"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault2" value="3"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault1" value="2"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault2" value="1"></li>
+                                <li class="list-inline-item"><input class="form-check-input" type="radio" name="flexRadioDefault24" id="flexRadioDefault1" value="0"></li>
                             </ul>
                         </div>
                     </div>

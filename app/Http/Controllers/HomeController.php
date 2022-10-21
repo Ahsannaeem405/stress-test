@@ -129,7 +129,7 @@ class HomeController extends Controller
         {
             $rarely=0;
         }
-        if(isset($check_count[1]))
+        if(isset($check_count[0]))
         {
             $never = ($check_count[0]*0);
         }
@@ -234,7 +234,7 @@ class HomeController extends Controller
         {
             $rarely=0;
         }
-        if(isset($check_count[1]))
+        if(isset($check_count[0]))
         {
             $never = ($check_count[0]*0);
         }
