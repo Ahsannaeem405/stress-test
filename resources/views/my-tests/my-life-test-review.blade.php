@@ -1,12 +1,29 @@
 @extends('layouts.app')
+<script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-polar.min.js"></script>
+  <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+  <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
 @section('content')
-<div class="lifeTotalSec">
+  <style type="text/css">
+    #container2 {
+      width: 100%;
+      height: 85%;
+      margin: 0;
+      padding: 0;
+    }
+</style>
+
+{{-- <div class="lifeTotalSec">
     <div class="container">
         <div>
             <div id="pie" style="height: 500px"></div>
         </div>
     </div>
-</div>
+</div> --}}
+<div id="container2"></div>
+
 <div class="StressTestSec">
     <div class="container">
         <div class="row">
@@ -113,7 +130,54 @@
         </div>
     </div>
 </div>
+{{-- new chart --}}
+
 <script>
+    anychart.onDocumentReady(function () {
+  // create polar chart
+  var chart = anychart.polar();
+
+  var columnSeries = chart.column([
+    { x: 'Personlig udvikling', value: <?php echo $life['personal'];?>, fill: '#3b5998' },
+    { x: 'Parforhold / Kærlighed', value: <?php echo $life['relationship'];?>, fill: '#d34836' },
+    { x: 'Venner / Familie', value: <?php echo $life['family'];?>, fill: '#8a3ab9' },
+    { x: 'Børn', value: <?php echo $life['children'];?>, fill: '#0077B5'  },
+    { x: 'Arbejdsliv', value: <?php echo $life['working'];?>, fill: '#0004b4'  },
+    { x: 'Helbred', value: <?php echo $life['health'];?>, fill: '#bb0000'  },
+    { x: 'Fritid', value: <?php echo $life['leisure'];?>, fill: '#ccc'  },
+    { x: 'Økonomi / Velstand', value: <?php echo $life['finance'];?>, fill: '#ffff12'  }
+  ]);
+
+  // set series name
+  columnSeries.name('Life Test Marks');
+//   columnSeries.color('#3b5998');
+
+  // set title settings
+  chart
+    .title()
+    .enabled(true)
+    .text('Livshjulet')
+    .padding({ bottom: 40, top: 50 });
+
+  // disable y-axis
+  chart.yAxis(false);
+
+  // set value prefix for tooltip
+//   chart.tooltip().valuePrefix('$');
+
+  // set x-scale
+  chart.xScale('ordinal');
+
+  // set chart container id
+  chart.container('container2');
+
+  // initiate chart drawing
+  chart.draw();
+});
+</script>
+
+{{--  --}}
+{{-- <script>
     // pie chart for stress
     Highcharts.chart('pie', {
         chart: {
@@ -157,11 +221,7 @@
                     ['Økonomi / Velstand', <?php echo $life['finance'];?>],
             ]
         }],
-        // tooltip:{
-        //     useHTML: true,
-        //     headerFormat: '<h2>{point.key}</h2>',
-        //     pointFormat: '<h4>{point.percentage:.1f} {series.name} </h4>',
-        // }
+        
     });
-</script>
+</script> --}}
 @endsection

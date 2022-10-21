@@ -159,11 +159,11 @@ nav .logo{
     border-radius: 10px;
 }
 .Innerdetail .btnNext{
-    text-align: cenetr !important;
+    text-align: center !important;
     float: none !important;
 }
 .Innerdetail .btnNext,
-.StressTestSec .table tr .btnNext {
+.StressTestSec .table ul .btnNext {
     /* background: #ccc; */
     background: rgb(20, 0, 133);
     padding: 12px 5rem;
@@ -174,11 +174,11 @@ nav .logo{
     font-size: 20px;
     border: 1px solid #dee2e6;
 }
-.StressTestSec .table tr .btnNext:hover{
+.StressTestSec .table ul .btnNext:hover{
     /* background-color: #f7f7f7; */
     box-shadow: 2px 3px 11px rgb(20, 0, 133);
 }
-.StressTestSec .table tr .btnNext{
+.StressTestSec .table ul .btnNext{
     padding: 12px 1rem !important;
 }
 .btnNext:hover{
@@ -190,45 +190,45 @@ nav .logo{
     border-radius: 20px;
     margin: 0;
 }
-.StressTestSec .table thead{
-    /* background: #f77b55; */
+.StressTestSec .table .thead {
     background: rgb(20 0 133);
-    color: white;
+    border-radius: 30px 30px 0px 0px;
 }
-thead th:first-child {
-    border-radius: 20px 0 0 0;
+.thead ul {
+    padding: 20px 0!important;
+    margin: 0;
 }
-thead th:last-child {
-    border-radius: 0 20px 0px 0;
+.thead ul li:first-child,
+.tbody ul li:first-child{
+    width: 47% !important;
 }
-.StressTestSec .table thead tr th{
-    padding: 35px 5px;
-    width: 0;
+.StressTestSec .table .thead ul li {
+    color: #fff;
+    font-weight: 700;
 }
-.StressTestSec .table tr th{
-    text-align: center;
-}
-.StressTestSec .table tr th,
-.StressTestSec .table tr td{
+.StressTestSec .table ul li{
     padding: 20px;
     text-align: center;
     font-family: 'Poppins-Regular';
 }
-.StressTestSec .table tr td:first-child{
+.StressTestSec .table ul li:first-child{
     text-align: justify;
 }
-.StressTestSec .table tr td{
+.StressTestSec .table ul li{
     color: #474f59;
     font-size: 15px;
 }
-.StressTestSec .table tr:nth-child(even){
+.StressTestSec .table ul:nth-child(even){
     background-color: #f7f7f7;
 }
-.StressTestSec .table tbody{
+.StressTestSec .table .tbody{
     background-color: #ccc;
 }
+.StressTestSec .table .tbody ul li{
+    width: 108px;
+}
 .StressTestSec .table #page-5
-.StressTestSec .table tbody tr.position-relative td.SubmitBtn{
+.StressTestSec .table .tbody ul.position-relative li.SubmitBtn{
     padding: 50px 0;
     text-align: right;
 }
@@ -249,45 +249,16 @@ thead th:last-child {
     box-shadow: none !important;
 }
 
-.PaginationBtm{
-    /* background: #f77b55 !important; */
-    background: rgb(20 0 133) !important;
-    position: relative;
-    border-radius: 0px 0px 20px 20px;
-    text-align: center;
-}
-.simple-pagination {
-    width: 100% !important;
-    justify-content: space-between;
-    padding: 30px !important;
-}
-.simple-pagination ul {
-    margin: 0 0 20px;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-}
-.simple-pagination li {
-    display: inline-block;
-    margin-right: 5px;
-    display: none;
-}
-.simple-pagination li:first-child,
-.simple-pagination li:last-child{
-    display: block !important;
-}
-
-.simple-pagination li a,
-.simple-pagination li span {
-    /* color: #666; */
-    color: white;
-    padding: 5px 12px;
+#prevBtn,
+#nextBtn {
+    color: #fff;
+    padding: 8px 20px;
     text-decoration: none;
     border: 1px solid #cccccc;
-    /* background-color: #FFF; */
     background-color: rgb(20, 0, 133);
     box-shadow: 0px 0px 8px 0px #cccccc;
     border-radius: 8px;
+    font-family: 'Poppins-Medium';
 }
 .simple-pagination .current {
     color: #474f59;

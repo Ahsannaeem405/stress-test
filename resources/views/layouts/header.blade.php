@@ -46,16 +46,16 @@
                             @endif
                             @if(Auth::user())
                             <li class="nav-item AdminIcon">
-                                <a class="nav-link loginBtn rounded" href="{{route('stress-test')}}">Stress Test</a>
+                                <a class="nav-link loginBtn rounded" href="{{route('stress-test')}}">Arbejdsstress Test</a>
                             </li>
                             <li class="nav-item AdminIcon">
-                                <a class="nav-link loginBtn rounded" href="{{route('life-test')}}">Life Test</a>
+                                <a class="nav-link loginBtn rounded" href="{{route('life-test')}}">Livshjuls Test</a>
                             </li>
                             <li class="nav-item AdminIcon">
-                                <a class="nav-link loginBtn rounded" href="{{route('my-test')}}">My Tests</a>
+                                <a class="nav-link loginBtn rounded" href="{{route('my-test')}}">Mine prøver</a>
                             </li>
                             <li class="nav-item AdminIcon">
-                                <a class="nav-link loginBtn rounded" href="{{route('logout')}}">Logout</a>
+                                <a class="nav-link loginBtn rounded" href="{{route('logout')}}">Log ud</a>
                             </li>
                             @endif
                         </ul>

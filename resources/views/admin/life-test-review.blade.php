@@ -1,15 +1,30 @@
 @extends('admin.layouts.app')
+<script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-polar.min.js"></script>
+  <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+  <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
 @section('content')
+  <style type="text/css">
+    #container3 {
+      width: 100%;
+      height: 75%;
+      margin: 0;
+      padding: 0;
+    }
+</style>
 <!-- BEGIN: Content-->
 <div class="app-content content">
     <div class="content-overlay"></div>
     <div class="header-navbar-shadow"></div>
     <div class="content-wrapper">
-        <div class="container">
+        {{-- <div class="container">
             <div>
                 <div id="pie" style="height: 500px;"></div>
             </div>
-        </div>
+        </div> --}}
+        <div id="container3"></div>
         <div class="content-header row p-2">
             <div class="content-header-left col-md-9 col-12 mb-2">
                 <div class="row breadcrumbs-top">
@@ -50,8 +65,8 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value2 m-0 fw-bold" align="center">{{$life->personal}}</p>
-                                    <input type="range" min="0" max="10" value="{{$life->personal}}" class="slider w-100" id="rangeSlider2" disabled/>
+                                    <p class="range-slider__value2 m-0 fw-bold" align="center">{{$life->relationship}}</p>
+                                    <input type="range" min="0" max="10" value="{{$life->relationship}}" class="slider w-100" id="rangeSlider2" disabled/>
                                 </div>
                             </div>
                         </td>
@@ -61,8 +76,8 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value3 m-0 fw-bold" align="center">{{$life->relationship}}</p>
-                                    <input type="range" min="0" max="10" value="{{$life->relationship}}" class="slider w-100" id="rangeSlider3" disabled/>
+                                    <p class="range-slider__value3 m-0 fw-bold" align="center">{{$life->family}}</p>
+                                    <input type="range" min="0" max="10" value="{{$life->family}}" class="slider w-100" id="rangeSlider3" disabled/>
                                 </div>
                             </div>
                         </td>
@@ -72,8 +87,8 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value4 m-0 fw-bold" align="center">{{$life->family}}</p>
-                                    <input type="range" min="0" max="10" value="{{$life->family}}" class="slider w-100" id="rangeSlider4" disabled/>
+                                    <p class="range-slider__value4 m-0 fw-bold" align="center">{{$life->children}}</p>
+                                    <input type="range" min="0" max="10" value="{{$life->children}}" class="slider w-100" id="rangeSlider4" disabled/>
                                 </div>
                             </div>
                         </td>
@@ -83,7 +98,7 @@
                         <td>
                             <div class="range-slider">
                                 <div class="range-slider__slider">
-                                    <p class="range-slider__value5 m-0 fw-bold" align="center">{{$life->children}}</p>
+                                    <p class="range-slider__value5 m-0 fw-bold" align="center">{{$life->working}}</p>
                                     <input type="range" min="0" max="10" value="{{$life->working}}" class="slider w-100" id="rangeSlider5" disabled/>
                                 </div>
                             </div>
@@ -127,8 +142,59 @@
         </div>
     </div>
 </div>
+{{-- new chart --}}
 
 <script>
+    anychart.onDocumentReady(function () {
+  // create polar chart
+  var chart = anychart.polar();
+
+  var columnSeries = chart.column([
+    { x: 'Personlig udvikling', value: <?php echo $life['personal'];?>, fill: '#3b5998' },
+    { x: 'Parforhold / Kærlighed', value: <?php echo $life['relationship'];?>, fill: '#d34836' },
+    { x: 'Venner / Familie', value: <?php echo $life['family'];?>, fill: '#8a3ab9' },
+    { x: 'Børn', value: <?php echo $life['children'];?>, fill: '#0077B5'  },
+    { x: 'Arbejdsliv', value: <?php echo $life['working'];?>, fill: '#0004b4'  },
+    { x: 'Helbred', value: <?php echo $life['health'];?>, fill: '#bb0000'  },
+    { x: 'Fritid', value: <?php echo $life['leisure'];?>, fill: '#ccc'  },
+    { x: 'Økonomi / Velstand', value: <?php echo $life['finance'];?>, fill: '#ffff12'  }
+  ]);
+
+  // set series name
+  columnSeries.name('Life Test Marks');
+//   columnSeries.color('#3b5998');
+
+  // set title settings
+  chart
+    .title()
+    // .fill({color:#000000})
+    .enabled(true)
+    .text('Livshjulet')
+    .padding({ bottom: 40, top: 50 });
+    
+
+  // disable y-axis
+  chart.yAxis(false);
+  chart.background().enabled(true);
+
+  chart.background().fill("transparent");
+
+  // set value prefix for tooltip
+//   chart.tooltip().valuePrefix('$');
+
+  // set x-scale
+  chart.xScale('ordinal');
+
+  // set chart container id
+  chart.container('container3');
+
+  // initiate chart drawing
+  chart.draw();
+});
+</script>
+{{--  --}}
+
+{{-- <script>
     // pie chart for stress
     Highcharts.chart('pie', {
         chart: {
@@ -174,11 +240,6 @@
                     ['Økonomi / Velstand', <?php echo $life['finance'];?>],
             ]
         }],
-        // tooltip:{
-        //     useHTML: true,
-        //     headerFormat: '<h2>{point.key}</h2>',
-        //     pointFormat: '<h4>{point.percentage:.1f} {series.name} </h4>',
-        // }
     });
-</script>
+</script> --}}
 @endsection

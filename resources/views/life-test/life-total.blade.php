@@ -1,13 +1,78 @@
 @extends('layouts.app')
+<script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-polar.min.js"></script>
+  <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+  <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
 @section('content')
-<div class="LiveTotalSec">
+  <style type="text/css">
+    #container {
+      width: 100%;
+      height: 85%;
+      margin: 0;
+      padding: 0;
+    }
+</style>
+<div id="container"></div>
+
+<script>
+    anychart.onDocumentReady(function () {
+  // create polar chart
+  var chart = anychart.polar();
+
+  var columnSeries = chart.column([
+    { x: 'Personlig udvikling', value: <?php echo $tests['personal'];?>, fill: '#3b5998' },
+    { x: 'Parforhold / Kærlighed', value: <?php echo $tests['relationship'];?>, fill: '#d34836' },
+    { x: 'Venner / Familie', value: <?php echo $tests['family'];?>, fill: '#8a3ab9' },
+    { x: 'Børn', value: <?php echo $tests['children'];?>, fill: '#0077B5'  },
+    { x: 'Arbejdsliv', value: <?php echo $tests['working'];?>, fill: '#0004b4'  },
+    { x: 'Helbred', value: <?php echo $tests['health'];?>, fill: '#bb0000'  },
+    { x: 'Fritid', value: <?php echo $tests['leisure'];?>, fill: '#ccc'  },
+    { x: 'Økonomi / Velstand', value: <?php echo $tests['finance'];?>, fill: '#ffff12'  }
+  ]);
+
+  // set series name
+  columnSeries.name('Life Test Marks');
+//   columnSeries.color('#3b5998');
+
+  // set title settings
+  chart
+    .title()
+    .enabled(true)
+    .text('Livshjulet')
+    .padding({ bottom: 40, top: 50 });
+
+  // disable y-axis
+  chart.yAxis(false);
+
+  // set value prefix for tooltip
+//   chart.tooltip().valuePrefix('$');
+
+  // set x-scale
+  chart.xScale('ordinal');
+
+  // set chart container id
+  chart.container('container');
+
+  // initiate chart drawing
+  chart.draw();
+});
+</script>
+
+
+
+
+
+{{-- <div class="LiveTotalSec">
     <div class="container">
         <div>
             <div id="pie" style="height: 500px"></div>
         </div>
     </div>
-</div>
-    <script>
+</div> --}}
+
+    {{-- <script>
         // pie chart for stress
         Highcharts.chart('pie', {
             chart: {
@@ -58,6 +123,6 @@
             //     pointFormat: '<h4>{point.percentage:.1f} {series.name} </h4>',
             // }
         });
-    </script>
+    </script> --}}
 
 @endsection
