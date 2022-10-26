@@ -30,7 +30,7 @@ class HomeController extends Controller
         return view('home');
     }
 
-   //---------------------------------------------User life-Test Start---------------------------------------------//
+    //---------------------------------------------User life-Test Start---------------------------------------------//
 
     public function life_test_index()
     {
@@ -52,7 +52,7 @@ class HomeController extends Controller
             'finance' => $request->finance,
         ]);
 
-        return redirect()->route('life-total')->with('success','Livstesten blev indsendt');
+        return redirect()->route('life-total')->with('success', 'Livstesten blev indsendt');
     }
 
     public function life_test_details_index()
@@ -67,85 +67,96 @@ class HomeController extends Controller
 
     public function life_total_index()
     {
-        $tests = Life::where('user_id',Auth::user()->id)->orderBy('id','DESC')->first();
-        return view('life-test.life-total',compact('tests'));
+
+
+        $tests = Life::where('user_id', Auth::user()->id)->orderBy('id', 'DESC')->first();
+        $data = [
+            $tests->personal,
+            $tests->relationship,
+            $tests->family,
+            $tests->children,
+            $tests->working,
+            $tests->health,
+            $tests->leisure,
+            $tests->finance
+        ];
+
+        return view('life-test.life-total', compact('tests', 'data'));
     }
-//---------------------------------------------User life-Test End---------------------------------------------//
+    //---------------------------------------------User life-Test End---------------------------------------------//
 
 
-//---------------------------------------------User My-Test Start---------------------------------------------//
+    //---------------------------------------------User My-Test Start---------------------------------------------//
     public function my_test_index()
     {
-        $lifes = Life::where('user_id',Auth::user()->id)->orderBy('id','DESC')->get();
-        $stresses = Stress::where('user_id',Auth::user()->id)->orderBy('id','DESC')->get();
-        return view('my-tests.my-test',compact('lifes','stresses'));
+        $lifes = Life::where('user_id', Auth::user()->id)->orderBy('id', 'DESC')->get();
+        $stresses = Stress::where('user_id', Auth::user()->id)->orderBy('id', 'DESC')->get();
+        return view('my-tests.my-test', compact('lifes', 'stresses'));
     }
 
     public function my_life_test_review($id)
     {
-        $life = Life::where('id',$id)->first();
-        if($life)
-        {
-            return view('my-tests.my-life-test-review',compact('life'));
+
+        $life = Life::where('id', $id)->first();
+
+
+
+        $data = [
+            $life->personal,
+            $life->relationship,
+            $life->family,
+            $life->children,
+            $life->working,
+            $life->health,
+            $life->leisure,
+            $life->finance
+        ];
+
+        if ($life) {
+            return view('my-tests.my-life-test-review', compact('life', 'data'));
         }
     }
 
     public function my_stress_test_review($id)
     {
-        $stress = Stress::select('flexRadioDefault','flexRadioDefault1','flexRadioDefault2','flexRadioDefault3','flexRadioDefault4','flexRadioDefault6','flexRadioDefault7','flexRadioDefault8','flexRadioDefault9','flexRadioDefault10','flexRadioDefault11','flexRadioDefault12','flexRadioDefault13','flexRadioDefault14','flexRadioDefault15','flexRadioDefault16','flexRadioDefault17','flexRadioDefault18','flexRadioDefault19','flexRadioDefault20','flexRadioDefault21','flexRadioDefault22','flexRadioDefault23')
-        ->where('user_id',Auth::user()->id)->where('id',$id)->first();
+        $stress = Stress::select('flexRadioDefault', 'flexRadioDefault1', 'flexRadioDefault2', 'flexRadioDefault3', 'flexRadioDefault4', 'flexRadioDefault6', 'flexRadioDefault7', 'flexRadioDefault8', 'flexRadioDefault9', 'flexRadioDefault10', 'flexRadioDefault11', 'flexRadioDefault12', 'flexRadioDefault13', 'flexRadioDefault14', 'flexRadioDefault15', 'flexRadioDefault16', 'flexRadioDefault17', 'flexRadioDefault18', 'flexRadioDefault19', 'flexRadioDefault20', 'flexRadioDefault21', 'flexRadioDefault22', 'flexRadioDefault23')
+            ->where('user_id', Auth::user()->id)->where('id', $id)->first();
         $make_array = $stress->toArray();
         $check_count = array_count_values($make_array);
-        if(isset($check_count[4]))
-        {
-            $constant = ($check_count[4]*4);
+        if (isset($check_count[4])) {
+            $constant = ($check_count[4] * 4);
+        } else {
+            $constant = 0;
         }
-        else 
-        {
-            $constant=0;
+        if (isset($check_count[3])) {
+            $frequently = ($check_count[3] * 3);
+        } else {
+            $frequently = 0;
         }
-        if(isset($check_count[3]))
-        {
-            $frequently = ($check_count[3]*3);
+        if (isset($check_count[2])) {
+            $sometime = ($check_count[2] * 2);
+        } else {
+            $sometime = 0;
         }
-        else
-        {
-            $frequently=0;
-        }
-        if(isset($check_count[2]))
-        {
-            $sometime = ($check_count[2]*2);
-        }
-        else
-        {
-            $sometime=0;
-        }
-        if(isset($check_count[1]))
-        {
+        if (isset($check_count[1])) {
 
-            $rarely = ($check_count[1]*1);
+            $rarely = ($check_count[1] * 1);
+        } else {
+            $rarely = 0;
         }
-        else
-        {
-            $rarely=0;
+        if (isset($check_count[0])) {
+            $never = ($check_count[0] * 0);
+        } else {
+            $never = 0;
         }
-        if(isset($check_count[0]))
-        {
-            $never = ($check_count[0]*0);
-        }
-        else
-        {
-            $never=0;
-        }
-        $total = ($constant+$frequently+$sometime+$rarely+$never);
-        if($stress)
-        {
-            return view('my-tests.my-stress-test-review',compact('stress','constant','frequently','sometime','rarely','never','total'));
+        $total = ($constant + $frequently + $sometime + $rarely + $never);
+        if ($stress) {
+            return view('my-tests.my-stress-test-review', compact('stress', 'constant', 'frequently', 'sometime', 'rarely', 'never', 'total'));
         }
     }
-//---------------------------------------------User My-Test Start---------------------------------------------//
+    //---------------------------------------------User My-Test Start---------------------------------------------//
 
-//---------------------------------------------User Stress-Test Start---------------------------------------------//
+    //---------------------------------------------User Stress-Test Start---------------------------------------------//
     public function stress_test_index()
     {
         return view('stress-test.stress-test');
@@ -180,7 +191,7 @@ class HomeController extends Controller
             'flexRadioDefault22' => $request->flexRadioDefault22,
             'flexRadioDefault23' => $request->flexRadioDefault23,
         ]);
-        return redirect()->route('stress-total')->with('success','Stresstest indsendt med succes');
+        return redirect()->route('stress-total')->with('success', 'Stresstest indsendt med succes');
     }
 
     public function stress_test_details_index()
@@ -195,55 +206,40 @@ class HomeController extends Controller
 
     public function stress_total_index()
     {
-        $tests = Stress::select('flexRadioDefault','flexRadioDefault1','flexRadioDefault2','flexRadioDefault3','flexRadioDefault4','flexRadioDefault6','flexRadioDefault7','flexRadioDefault8','flexRadioDefault9','flexRadioDefault10','flexRadioDefault11','flexRadioDefault12','flexRadioDefault13','flexRadioDefault14','flexRadioDefault15','flexRadioDefault16','flexRadioDefault17','flexRadioDefault18','flexRadioDefault19','flexRadioDefault20','flexRadioDefault21','flexRadioDefault22','flexRadioDefault23')
-        ->where('user_id',Auth::user()->id)->orderBy('created_at', 'desc')->first();
+        $tests = Stress::select('flexRadioDefault', 'flexRadioDefault1', 'flexRadioDefault2', 'flexRadioDefault3', 'flexRadioDefault4', 'flexRadioDefault6', 'flexRadioDefault7', 'flexRadioDefault8', 'flexRadioDefault9', 'flexRadioDefault10', 'flexRadioDefault11', 'flexRadioDefault12', 'flexRadioDefault13', 'flexRadioDefault14', 'flexRadioDefault15', 'flexRadioDefault16', 'flexRadioDefault17', 'flexRadioDefault18', 'flexRadioDefault19', 'flexRadioDefault20', 'flexRadioDefault21', 'flexRadioDefault22', 'flexRadioDefault23')
+            ->where('user_id', Auth::user()->id)->orderBy('created_at', 'desc')->first();
         // dd($tests);
         $make_array = $tests->toArray();
         $check_count = array_count_values($make_array);
         // dd($check_count);
-        if(isset($check_count[4]))
-        {
-            $constant = ($check_count[4]*4);
+        if (isset($check_count[4])) {
+            $constant = ($check_count[4] * 4);
+        } else {
+            $constant = 0;
         }
-        else 
-        {
-            $constant=0;
+        if (isset($check_count[3])) {
+            $frequently = ($check_count[3] * 3);
+        } else {
+            $frequently = 0;
         }
-        if(isset($check_count[3]))
-        {
-            $frequently = ($check_count[3]*3);
+        if (isset($check_count[2])) {
+            $sometime = ($check_count[2] * 2);
+        } else {
+            $sometime = 0;
         }
-        else
-        {
-            $frequently=0;
-        }
-        if(isset($check_count[2]))
-        {
-            $sometime = ($check_count[2]*2);
-        }
-        else
-        {
-            $sometime=0;
-        }
-        if(isset($check_count[1]))
-        {
+        if (isset($check_count[1])) {
 
-            $rarely = ($check_count[1]*1);
+            $rarely = ($check_count[1] * 1);
+        } else {
+            $rarely = 0;
         }
-        else
-        {
-            $rarely=0;
+        if (isset($check_count[0])) {
+            $never = ($check_count[0] * 0);
+        } else {
+            $never = 0;
         }
-        if(isset($check_count[0]))
-        {
-            $never = ($check_count[0]*0);
-        }
-        else
-        {
-            $never=0;
-        }
-        $total = ($constant+$frequently+$sometime+$rarely+$never);
-        return view('stress-test.stress-total',compact('constant','frequently','sometime','rarely','never','total'));
+        $total = ($constant + $frequently + $sometime + $rarely + $never);
+        return view('stress-test.stress-total', compact('constant', 'frequently', 'sometime', 'rarely', 'never', 'total'));
     }
 
     //---------------------------------------------User Stress-Test End---------------------------------------------//
