@@ -153,7 +153,10 @@ Highcharts.chart('container', {
   },
   
   pane: {
-    startAngle: 0
+    startAngle: 0,
+    background : {
+            backgroundColor:"#F2F2F2"
+        }
   },
   
   yAxis: [
