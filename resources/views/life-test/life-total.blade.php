@@ -43,6 +43,7 @@ legend: {
 enabled: false
 },
 
+
 pane: {
 startAngle: 0,
 background : {
@@ -59,7 +60,12 @@ tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
 min: 0,
 max: 12,
 labels: {
-  enabled: true
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
+  
 },
 linkedTo: 0
 },
@@ -71,7 +77,13 @@ tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
 min: 0,
 max: 12,
 labels: {
-  enabled: true
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
+  
+  
 },
 linkedTo: 0
 }, {
@@ -82,7 +94,13 @@ tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
 min: 0,
 max: 12,
 labels: {
-  enabled: true
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
+  
+  
 },
 linkedTo: 0
 }, {
@@ -93,7 +111,12 @@ tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
 min: 0,
 max: 12,
 labels: {
-  enabled: true
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
+  
 },
 linkedTo: 0
 }, {
@@ -104,7 +127,12 @@ tickPositions:[0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
 min: 0,
 max: 12,
 labels: {
-  enabled: true
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
+  
 },
 linkedTo: 0
 }, {
@@ -115,7 +143,12 @@ tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
 min: 0,
 max: 12,
 labels: {
-  enabled: true
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
+  
 },
 linkedTo: 0
 },
@@ -124,10 +157,14 @@ angle: 270,
 gridLineInterpolation: 'polygon',
 showLastLabel: true,
 tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
-min: 0,
-max: 12,
+
 labels: {
-  enabled: true
+  enabled: true,
+
+  "style": {   
+    "font-weight": "700",
+    "font-size": "8px",
+      },  
 },
 linkedTo: 0
 },
@@ -139,7 +176,12 @@ tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
 min: 0,
 max: 12,
 labels: {
-  enabled: true
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
+  
 },
 linkedTo: 0
 },
@@ -151,7 +193,11 @@ tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
 min: 0,
 max: 12,
 labels: {
-  enabled: true
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
 },
 linkedTo: 0
 }
@@ -163,21 +209,7 @@ lineWidth: 0,
 tickmarkPlacement: 'on',
 categories: ['Personlig udvikling', 'Parforhold / Kærlighed', 'Venner / Familie', 'Børn', 'Arbejdsliv','Helbred','Fritid','Økonomi / Velstand']
 },
-tooltip: {
-shared: true,
-formatter: function() {
-  var points = this.points,
-    returnStr = this.x;
 
-  points.forEach(function(point) {
-    returnStr += (
-      '<br />' + point.series.name + ': ' + yLabels[point.point.x][point.y - 1]
-    );
-  });
-
-  return returnStr;
-}
-},
 
 series: [{
 data: values
