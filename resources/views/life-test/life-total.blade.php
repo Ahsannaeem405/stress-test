@@ -21,12 +21,12 @@
 
 
    <script>
-      var values = {{json_encode($data)}};
+       var values = {{json_encode($data)}};
 
     
 
 var yLabels = [
-[1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+[0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
 [1, 2, 3, 4, 5, 6, 7, 8, 9,10]
 ];
 
@@ -41,16 +41,19 @@ height: 500
 legend: {
 enabled: false
 },
+
 pane: {
 startAngle: 0
 },
+
 yAxis: [
 {
 angle: 0,
 gridLineInterpolation: 'polygon',
 showLastLabel: true,
-tickPositions: [1, 2, 3, 4, 5, 6, 7, 8, 9,10],
-max: 10,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
 labels: {
   enabled: true
 },
@@ -60,8 +63,9 @@ linkedTo: 0
 angle: 45,
 gridLineInterpolation: 'polygon',
 showLastLabel: true,
-tickPositions: [1, 2, 3, 4, 5, 6, 7, 8, 9,10],
-max: 10,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
 labels: {
   enabled: true
 },
@@ -70,8 +74,9 @@ linkedTo: 0
 angle: 90,
 gridLineInterpolation: 'polygon',
 showLastLabel: true,
-tickPositions: [1, 2, 3, 4, 5, 6, 7, 8, 9,10],
-max: 10,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
 labels: {
   enabled: true
 },
@@ -80,8 +85,9 @@ linkedTo: 0
 angle: 135,
 gridLineInterpolation: 'polygon',
 showLastLabel: true,
-tickPositions: [1, 2, 3, 4, 5, 6, 7, 8, 9,10],
-max: 10,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
 labels: {
   enabled: true
 },
@@ -90,8 +96,9 @@ linkedTo: 0
 angle: 180,
 gridLineInterpolation: 'polygon',
 showLastLabel: true,
-tickPositions:[1, 2, 3, 4, 5, 6, 7, 8, 9,10],
-max: 10,
+tickPositions:[0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
 labels: {
   enabled: true
 },
@@ -99,8 +106,10 @@ linkedTo: 0
 }, {
 angle: 225,
 gridLineInterpolation: 'polygon',
-tickPositions: [1, 2, 3, 4, 5, 6, 7, 8, 9,10],
-max: 10,
+showLastLabel: true,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
 labels: {
   enabled: true
 },
@@ -109,8 +118,10 @@ linkedTo: 0
 {
 angle: 270,
 gridLineInterpolation: 'polygon',
-tickPositions: [1, 2, 3, 4, 5, 6, 7, 8, 9,10],
-max: 10,
+showLastLabel: true,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
 labels: {
   enabled: true
 },
@@ -119,8 +130,10 @@ linkedTo: 0
 {
 angle: 315,
 gridLineInterpolation: 'polygon',
-tickPositions: [1, 2, 3, 4, 5, 6, 7, 8, 9,10],
-max: 8,
+showLastLabel: true,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
 labels: {
   enabled: true
 },
@@ -129,14 +142,18 @@ linkedTo: 0
 {
 angle: 360,
 gridLineInterpolation: 'polygon',
-tickPositions: [1, 2, 3, 4, 5, 6, 7, 8, 9,10],
-max: 8,
+showLastLabel: true,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
 labels: {
   enabled: true
 },
 linkedTo: 0
 }
 ],
+
+
 xAxis: {
 lineWidth: 0,
 tickmarkPlacement: 'on',
@@ -162,7 +179,6 @@ series: [{
 data: values
 }]
 });
-
    
     </script> 
 
