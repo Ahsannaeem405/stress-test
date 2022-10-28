@@ -190,6 +190,7 @@ class HomeController extends Controller
             'flexRadioDefault21' => $request->flexRadioDefault21,
             'flexRadioDefault22' => $request->flexRadioDefault22,
             'flexRadioDefault23' => $request->flexRadioDefault23,
+            'flexRadioDefault24' => $request->flexRadioDefault24,
         ]);
         return redirect()->route('stress-total')->with('success', 'Stresstest indsendt med succes');
     }
@@ -206,7 +207,7 @@ class HomeController extends Controller
 
     public function stress_total_index()
     {
-        $tests = Stress::select('flexRadioDefault', 'flexRadioDefault1', 'flexRadioDefault2', 'flexRadioDefault3', 'flexRadioDefault4', 'flexRadioDefault6', 'flexRadioDefault7', 'flexRadioDefault8', 'flexRadioDefault9', 'flexRadioDefault10', 'flexRadioDefault11', 'flexRadioDefault12', 'flexRadioDefault13', 'flexRadioDefault14', 'flexRadioDefault15', 'flexRadioDefault16', 'flexRadioDefault17', 'flexRadioDefault18', 'flexRadioDefault19', 'flexRadioDefault20', 'flexRadioDefault21', 'flexRadioDefault22', 'flexRadioDefault23')
+        $tests = Stress::select('flexRadioDefault', 'flexRadioDefault1', 'flexRadioDefault2', 'flexRadioDefault3', 'flexRadioDefault4', 'flexRadioDefault6', 'flexRadioDefault7', 'flexRadioDefault8', 'flexRadioDefault9', 'flexRadioDefault10', 'flexRadioDefault11', 'flexRadioDefault12', 'flexRadioDefault13', 'flexRadioDefault14', 'flexRadioDefault15', 'flexRadioDefault16', 'flexRadioDefault17', 'flexRadioDefault18', 'flexRadioDefault19', 'flexRadioDefault20', 'flexRadioDefault21', 'flexRadioDefault22', 'flexRadioDefault23','flexRadioDefault24')
             ->where('user_id', Auth::user()->id)->orderBy('created_at', 'desc')->first();
         // dd($tests);
         $make_array = $tests->toArray();
