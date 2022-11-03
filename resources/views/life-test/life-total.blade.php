@@ -5,124 +5,217 @@
   <script src="https://cdn.anychart.com/releases/v8/js/anychart-polar.min.js"></script>
   <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
   <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
 @section('content')
   <style type="text/css">
-    #container {
-      width: 100%;
-      height: 85%;
-      margin: 0;
-      padding: 0;
-    }
+      #container {
+  min-width: 310px;
+  max-width: 800px;
+  margin: 0 auto
+}
 </style>
+
 <div id="container"></div>
 
-<script>
-    anychart.onDocumentReady(function () {
-  // create polar chart
-  var chart = anychart.polar();
 
-  var columnSeries = chart.column([
-    { x: 'Personlig udvikling', value: <?php echo $tests['personal'];?>, fill: '#3b5998' },
-    { x: 'Parforhold / Kærlighed', value: <?php echo $tests['relationship'];?>, fill: '#d34836' },
-    { x: 'Venner / Familie', value: <?php echo $tests['family'];?>, fill: '#8a3ab9' },
-    { x: 'Børn', value: <?php echo $tests['children'];?>, fill: '#0077B5'  },
-    { x: 'Arbejdsliv', value: <?php echo $tests['working'];?>, fill: '#0004b4'  },
-    { x: 'Helbred', value: <?php echo $tests['health'];?>, fill: '#bb0000'  },
-    { x: 'Fritid', value: <?php echo $tests['leisure'];?>, fill: '#ccc'  },
-    { x: 'Økonomi / Velstand', value: <?php echo $tests['finance'];?>, fill: '#ffff12'  }
-  ]);
 
-  // set series name
-  columnSeries.name('Life Test Marks');
-//   columnSeries.color('#3b5998');
+   <script>
+       var values = {{json_encode($data)}};
 
-  // set title settings
-  chart
-    .title()
-    .enabled(true)
-    .text('Livshjulet')
-    .padding({ bottom: 40, top: 50 });
+    
 
-  // disable y-axis
-  chart.yAxis(false);
+var yLabels = [
+[0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+[1, 2, 3, 4, 5, 6, 7, 8, 9,10]
+];
 
-  // set value prefix for tooltip
-//   chart.tooltip().valuePrefix('$');
+Highcharts.chart('container', {
+  
+title: {
+    text: null  
+},
+chart: {
+polar: true,
+height: 500
+},
+legend: {
+enabled: false
+},
 
-  // set x-scale
-  chart.xScale('ordinal');
 
-  // set chart container id
-  chart.container('container');
+pane: {
+startAngle: 0,
+background : {
+            backgroundColor:"#F2F2F2"
+        }
+},
 
-  // initiate chart drawing
-  chart.draw();
+yAxis: [
+{
+angle: 0,
+gridLineInterpolation: 'polygon',
+showLastLabel: true,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
+labels: {
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
+  
+},
+linkedTo: 0
+},
+{
+angle: 45,
+gridLineInterpolation: 'polygon',
+showLastLabel: true,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
+labels: {
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
+  
+  
+},
+linkedTo: 0
+}, {
+angle: 90,
+gridLineInterpolation: 'polygon',
+showLastLabel: true,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
+labels: {
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
+  
+  
+},
+linkedTo: 0
+}, {
+angle: 135,
+gridLineInterpolation: 'polygon',
+showLastLabel: true,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
+labels: {
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
+  
+},
+linkedTo: 0
+}, {
+angle: 180,
+gridLineInterpolation: 'polygon',
+showLastLabel: true,
+tickPositions:[0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
+labels: {
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
+  
+},
+linkedTo: 0
+}, {
+angle: 225,
+gridLineInterpolation: 'polygon',
+showLastLabel: true,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
+labels: {
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
+  
+},
+linkedTo: 0
+},
+{
+angle: 270,
+gridLineInterpolation: 'polygon',
+showLastLabel: true,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+
+labels: {
+  enabled: true,
+
+  "style": {   
+    "font-weight": "700",
+    "font-size": "8px",
+      },  
+},
+linkedTo: 0
+},
+{
+angle: 315,
+gridLineInterpolation: 'polygon',
+showLastLabel: true,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
+labels: {
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
+  
+},
+linkedTo: 0
+},
+{
+angle: 360,
+gridLineInterpolation: 'polygon',
+showLastLabel: true,
+tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+min: 0,
+max: 12,
+labels: {
+  "style": {
+    "font-weight": "700",
+    "font-size": "8px",
+      },
+  enabled: true,
+},
+linkedTo: 0
+}
+],
+
+
+xAxis: {
+lineWidth: 0,
+tickmarkPlacement: 'on',
+categories: ['Personlig udvikling', 'Parforhold / Kærlighed', 'Venner / Familie', 'Børn', 'Arbejdsliv','Helbred','Fritid','Økonomi / Velstand']
+},
+
+
+series: [{
+data: values
+}]
 });
-</script>
-
-
-
-
-
-{{-- <div class="LiveTotalSec">
-    <div class="container">
-        <div>
-            <div id="pie" style="height: 500px"></div>
-        </div>
-    </div>
-</div> --}}
-
-    {{-- <script>
-        // pie chart for stress
-        Highcharts.chart('pie', {
-            chart: {
-                type: 'pie',
-                options3d: {
-                    enabled: true,
-                    alpha: 45
-                }
-            },
-            title: {
-                text: '<h1>Livshjulet</h1>'
-            },
-            // subtitle: {
-            //     text: 'As per statistics data 2016'
-            // },
-            plotOptions: {
-                pie: {
-                    innerSize: 100,
-                    depth: 65,
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: true,
-                        // format: '{point.name} ({point.percentage:.1f}%)',
-                        format: '{point.name} ({point.y:1f})',
-                        connectorWidth: 2,
-                    }
-                }
-            },
-            colors:['#3b5998', '#d34836', '#8a3ab9', '#0077B5', '#0084b4', '#bb0000', '#ccc', '#ddd'],
-            series: [{
-                name: 'Life Test Marks',
-                data: [
-                        ['Personlig udvikling', <?php echo $tests['personal'];?>],
-                        ['Parforhold / Kærlighed  ', <?php echo $tests['relationship'];?>],
-                        ['Venner / Familie', <?php echo $tests['family'];?>],
-                        // {name:'LinkedIn',  y:450, sliced: true,selected: true},
-                        ['Børn', <?php echo $tests['children'];?>],
-                        ['Arbejdsliv', <?php echo $tests['working'];?>],
-                        ['Helbred ', <?php echo $tests['health'];?>],
-                        ['Fritid ', <?php echo $tests['leisure'];?>],
-                        ['Økonomi / Velstand', <?php echo $tests['finance'];?>],
-                ]
-            }],
-            // tooltip:{
-            //     useHTML: true,
-            //     headerFormat: '<h2>{point.key}</h2>',
-            //     pointFormat: '<h4>{point.percentage:.1f} {series.name} </h4>',
-            // }
-        });
-    </script> --}}
+   
+    </script> 
 
 @endsection

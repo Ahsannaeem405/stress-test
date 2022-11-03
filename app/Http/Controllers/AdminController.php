@@ -90,8 +90,21 @@ class AdminController extends Controller
 
     public function life_test_review($id)
     {
+
+
         $life = Life::where('id',$id)->first();
-        return view('admin.life-test-review',compact('life'));
+
+        $data = [
+            $life->personal,
+            $life->relationship,
+            $life->family,
+            $life->children,
+            $life->working,
+            $life->health,
+            $life->leisure,
+            $life->finance
+        ];
+        return view('admin.life-test-review',compact('life','data'));
     }
 
     public function life_test_delete($id)

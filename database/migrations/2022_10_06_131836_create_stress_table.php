@@ -39,6 +39,7 @@ class CreateStressTable extends Migration
             $table->string('flexRadioDefault21');
             $table->string('flexRadioDefault22');
             $table->string('flexRadioDefault23');
+            $table->string('flexRadioDefault24');
             $table->timestamps();
         });
     }
