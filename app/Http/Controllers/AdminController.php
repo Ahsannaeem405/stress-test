@@ -122,6 +122,7 @@ class AdminController extends Controller
     public function stress_tests_index()
     {
         $stress_tests = stress::all();
+        // dd($stress_tests[0]->get_stress_test_users->name);
         return view('admin.stress-tests',compact('stress_tests'));
     }
 
@@ -179,11 +180,15 @@ class AdminController extends Controller
 
     public function stress_test_delete($id)
     {
-        $user = Stress::where('user_id',$id)->first();
+        $user = Stress::where('id',$id)->first();
         if($user)
         {
             $user->delete();
             return back()->with('success','Optagelsen blev slettet');
+        }
+        else
+        {
+            return back()->with('error','Sorry Test Record Not Found !');
         }
     }
     //--------------------------------------------- Admin Stress Tests End---------------------------------------------//

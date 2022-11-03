@@ -15,7 +15,8 @@ class CreateStressTable extends Migration
     {
         Schema::create('stress', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('flexRadioDefault');
             $table->string('flexRadioDefault1');
             $table->string('flexRadioDefault2');

@@ -83,7 +83,7 @@
                                 <td class="product-price">{{Carbon\Carbon::parse($test->created_at)->format('d-m-Y')}}</td>
                                 <td class="product-action" style="display: flex;">
                                     <a href="{{ url('admin/stress-test-review',$test->id)}}"><span class="action-edit"><i class="feather icon-eye text-success"></i></span></a> &nbsp;&nbsp;
-                                    <form method="POST" action="{{ url('sadmin/tress-test-delete',$test->id)}}">
+                                    <form method="POST" action="{{ route('stress-test-delete',$test->id) }}">
                                         @csrf
                                         <input name="_method" type="hidden" value="GET">
                                         {{-- <span class="action-delete show_confirm"><i class="feather icon-trash text-danger"></i></span> --}}

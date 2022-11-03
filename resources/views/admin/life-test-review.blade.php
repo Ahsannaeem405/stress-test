@@ -160,7 +160,8 @@ title: {
 },
 chart: {
 polar: true,
-height: 500
+height: 500,
+backgroundColor: 'transparent',
 },
 legend: {
 enabled: false
@@ -283,10 +284,10 @@ tickPositions: [0,1, 2, 3, 4, 5, 6, 7, 8, 9,10],
 
 labels: {
   enabled: true,
-
   "style": {   
     "font-weight": "700",
     "font-size": "8px",
+    
       },  
 },
 linkedTo: 0
@@ -330,6 +331,14 @@ linkedTo: 0
 xAxis: {
 lineWidth: 0,
 tickmarkPlacement: 'on',
+labels: {
+  "style": {
+    "font-weight": "700",
+    "font-size": "12px",
+    "color": "white",
+      },
+  enabled: true,
+},
 categories: ['Personlig udvikling', 'Parforhold / Kærlighed', 'Venner / Familie', 'Børn', 'Arbejdsliv','Helbred','Fritid','Økonomi / Velstand']
 },
 

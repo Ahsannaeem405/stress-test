@@ -20,5 +20,11 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('12345678'),
             'role' => 'admin',
         ]);
+        // User::create([
+        //     'name' => 'Billy Adamsen',
+        //     'email' => 'bian@zealand.dk',
+        //     'password' => Hash::make('Vestervang-42'),
+        //     'role' => 'admin',
+        // ]);
     }
 }
